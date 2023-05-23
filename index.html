@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice Cream</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Seymour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <header>
         <div class="section-header-hero container">
+
+            <a href="" class="logo link"></a>
+
             <div class="block-nav">
-
-                <a href="" class="logo link"></a>
-
                 <nav class="navigation">
-                    <ul>
+                    <ul class="list">
                         <li class="navigation__item"><a href="" class="link">Home</a></li>
                         <li class="navigation__item"><a href="" class="link">How it's made?</a></li>
                         <li class="navigation__item"><a href="" class="link">Our products</a></li>
@@ -25,6 +28,29 @@
 
                 <button class="btn">Buy now</button>
             </div>
+
+            <div class="mobile-menu" data-menu>
+                <nav class="mobile-nav">
+                    <ul class="list mobile-nav__list">
+                        <li class="mobile-nav__item"><a href="" class="link mobile-nav__navigation mobile-nav__active-page">Home</a></li>
+                        <li class="mobile-nav__item"><a href="" class="link mobile-nav__navigation">How it's made?</a></li>
+                        <li class="mobile-nav__item"><a href="" class="link mobile-nav__navigation">Our products</a></li>
+                        <li class="mobile-nav__item"><a href="" class="link mobile-nav__navigation">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <button class="btn mobile-menu-btn">Buy now</button>
+            </div>
+            
+            <button
+                class="btn-menu"
+                aria-expanded="false"
+                data-menu-button>
+                <svg class="btn-menu__svg" aria-label="Перемикач мобільного меню">
+                    <use class="btn-menu__icon-menu" href="./images/sprite-icons.svg#icon-menu-mobile"></use>
+                    <use class="btn-menu__icon-cross" href="./images/sprite-icons.svg#icon-close-mobile"></use>
+                </svg>
+            </button>
 
             <div class="hero">
                 <h1 class="hero__title">Ice cream made with passion</h1>
@@ -52,7 +78,7 @@
     <main>
         <div class="section-products container">
             <h2 class="section-products__title">products</h2>
-            <ul>
+            <ul class="list">
                 <li class="card-products">
                     <h3 class="card-products__title">Ice cream</h3>
                     <p class="card-products__description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
@@ -90,7 +116,7 @@
     <div class="section-advantages container">
         <h2 hidden>Advantages</h2>
 
-        <ul>
+        <ul class="list">
             <li class="section-advantages__item">
                 <p class="section-advantages__value">721</p>
                 <p class="section-advantages__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
@@ -117,14 +143,14 @@
     <div class="section-contacts container">
         <h2 hidden>Contacts</h2>
 
-        <ul>
+        <ul class="list">
             <li class="section-contacts__item">
-                <ul>
+                <ul class="list">
                     <li class="section-contacts__category">Cafe</li>
                     <li class="section-contacts__city">Chicago</li>
                     <li class="section-contacts__address"><a href="">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a></li>
                     <li class="section-contacts__work-time">
-                        <ul>
+                        <ul class="list">
                             <li class="section-contacts__day"><p>Monday - Friday</p></li>
                             <li class="section-contacts__hour"><p>06:00 AM - 10:00 PM</p></li>
                             <li class="section-contacts__day"><p>Saturday - Sunday</p></li>
@@ -136,12 +162,12 @@
                 </ul>
             </li>
             <li class="section-contacts__item">
-                <ul>
+                <ul class="list">
                     <li class="section-contacts__category">Food truck</li>
                     <li class="section-contacts__city">Los Angeles</li>
                     <li class="section-contacts__address"><a href="">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a></li>
                     <li class="section-contacts__work-time">
-                        <ul>
+                        <ul class="list">
                             <li class="section-contacts__day"><p>Monday - Friday</p></li>
                             <li class="section-contacts__hour"><p>06:00 AM - 10:00 PM</p></li>
                             <li class="section-contacts__day"><p>Saturday - Sunday</p></li>
@@ -153,12 +179,12 @@
                 </ul>
             </li>
             <li class="section-contacts__item">
-                <ul>
+                <ul class="list">
                     <li class="section-contacts__category">Cafe</li>
                     <li class="section-contacts__city">New York</li>
                     <li class="section-contacts__address"><a href="">726 Sterling Pl, Brooklyn, NY 11222, USA</a></li>
                     <li class="section-contacts__work-time">
-                        <ul>
+                        <ul class="list">
                             <li class="section-contacts__day"><p>Monday - Friday</p></li>
                             <li class="section-contacts__hour"><p>06:00 AM - 10:00 PM</p></li>
                             <li class="section-contacts__day"><p>Saturday - Sunday</p></li>
@@ -178,7 +204,7 @@
         <div class="section-footer container">
             <h2 hidden>Homemade ice cream made with passion</h2>
             <p>Homemade ice cream made with passion</p>
-            <ul>
+            <ul class="list">
                 <li class="section-footer__social-link"><a href="https://github.com/">github</a></li>
                 <li class="section-footer__social-link"><a href="https://web.telegram.org/">telegram</a></li>
                 <li class="section-footer__social-link"><a href="https://www.facebook.com/">facebook</a></li>
@@ -186,5 +212,7 @@
             <p>Feel free to contact <a href="tel:+61 (0) 383 766 284">+61 (0) 383 766 284</a></p>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -1,0 +1,16 @@
+$main-font-size: 14px;
+$main-letter-spacing: 0.04em;
+$main-font-family: Montserat;
+$dicoration-font-family: SeymourOne;
+$secondary-font-family: sans-serif;
+
+$colors: (
+    'main-color-text': #131313,
+    'secondary-color-text': #FCFCFC,
+    'accent-color-main': #84A178,
+    'accent-color-secondary': #F8D24E,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}

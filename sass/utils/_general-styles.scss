@@ -1,0 +1,79 @@
+body {
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-attachment: fixed;
+
+    font-family: $main-font-family, $secondary-font-family;
+    font-size: $main-font-size;
+    letter-spacing: $main-letter-spacing;
+
+    @media screen and (max-width: 480px) {
+        background-image: url("../../images/background/bg_mobile.jpg");
+        
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        background-image: url("../../images/background/bg_tablet.jpg");
+    }
+
+    @media screen and (min-width: 769px) {
+        background-image: url("../../images/background/bg_desktop.jpg");
+    }
+    
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    body{
+
+        @media screen and (max-width: 480px) {
+            background-image: url("../../images/background/bg_mobile@2x.jpg");
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            background-image: url("../../images/background/bg_tablet@2x.jpg");
+        }
+
+        @media screen and (min-width: 769px) {
+            background-image: url("../../images/background/bg_desktop@2x.jpg");
+        }
+    }
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.list {
+    list-style-type: none;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn{
+    width: 152px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+
+    background-color: getColor('accent-color-secondary');
+}

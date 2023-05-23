@@ -1,0 +1,30 @@
+.section-header-hero{
+    background-color: getColor('accent-color-main');
+}
+
+.logo{
+    display: inline-block;
+    width: 48px;
+    height: 44px;
+    margin-top: 14px;
+
+    background-image: url("../../images/logo.png");
+    background-repeat: no-repeat;
+}
+
+.block-nav {
+
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 601px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 601px) {
+        display: flex;
+        width: 100%;
+    }
+
+}
