@@ -211,4 +211,106 @@ img {
 }
 .btn-menu__svg .btn-menu__icon-cross {
   display: none;
+}
+
+.section-header-hero {
+  position: relative;
+}
+@media screen and (max-width: 450px) {
+  .section-header-hero {
+    min-height: 502px;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 480px) {
+  .section-header-hero {
+    min-height: 415px;
+  }
+}
+
+.hero__title {
+  width: 247px;
+  margin-bottom: 0;
+  font-family: Seymour One, sans-serif;
+  font-size: 26px;
+  line-height: 1.27;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+
+.hero__title--last-word {
+  font-size: 34px;
+  line-height: 0.96;
+}
+
+.hero__btn {
+  display: inline-block;
+  padding: 11px 26px;
+  margin-top: 32px;
+  outline: 2px solid #F8D24E;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #131313;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+}
+.hero__btn:hover, .hero__btn:focus {
+  cursor: pointer;
+  color: #FCFCFC;
+}
+
+.hero__btn-link {
+  margin-left: 12px;
+  color: #F8D24E;
+  text-decoration: underline;
+}
+.hero__btn-link:hover, .hero__btn-link:focus {
+  cursor: pointer;
+  color: #FCFCFC;
+}
+
+@media screen and (max-width: 480px) {
+  .number-point {
+    display: none;
+  }
+}
+
+.picture-hero__img-point {
+  position: absolute;
+  bottom: 0;
+}
+@media screen and (max-width: 450px) {
+  .picture-hero__img-point {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 480px) {
+  .picture-hero__img-point {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pictures-hero__many-ice-cream {
+    display: none;
+  }
+}
+
+.picture-hero__img-cone-ice-cream {
+  position: absolute;
+  bottom: 0;
+}
+@media screen and (max-width: 451px) {
+  .picture-hero__img-cone-ice-cream {
+    right: 48%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 480px) {
+  .picture-hero__img-cone-ice-cream {
+    right: 5%;
+  }
 }/*# sourceMappingURL=main.css.map */

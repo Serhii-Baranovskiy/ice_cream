@@ -53,9 +53,10 @@
             </button>
 
             <div class="hero">
-                <h1 class="hero__title">Ice cream made with passion</h1>
-                <button class="btn">Products</button>
-                <button class="btn">How it's made</button>
+                <h1 class="hero__title">Ice cream made with <span class="hero__title--last-word">passion</span></h1>
+                <a href="" class="link hero__btn">Products</a>
+                <a href="" class="link hero__btn-link">How it's made</a>
+                
 
                 <div class="number-point">
                     <div class="number-point__cafe"></div>
@@ -63,13 +64,28 @@
                 </div>
 
                 <div class="pictures-hero">
-                    <div class="pictures-hero__points"></div>
+                    <div class="pictures-hero__points">
+                        <img 
+                            class="picture-hero__img-point"
+                            srcset="./images/point-mobile.png 1x, ./images/point-mobile@2x.png 2x"
+                            src="./images/point-mobile.png" 
+                            alt="points">
+                    </div>
                     <div class="pictures-hero__many-ice-cream">
                         <p class="pictures-hero__description">Indulge in a scoop of ice cream made 
                             with passion and treat your taste buds to an unforgettable experience!</p>
                         <div class="pictures-hero__arrow"></div>
                     </div>
-                    <div class="pictures-hero__cone-ice-cream"></div>
+                    <div class="pictures-hero__cone-ice-cream">
+                        <picture>
+                            <source srcset="./images/cone-ice-cream320.png 1x, ./images/cone-ice-cream320@2x.png 2x" media="(max-width: 450px)">
+                            <source srcset="./images/cone-ice-cream480.png 1x, ./images/cone-ice-cream480@2x.png 2x" media="(max-width: 480px)">
+                        <img 
+                            class="picture-hero__img-cone-ice-cream"
+                            src="./images/cone-ice-cream.png" 
+                            alt="cone-ice-cream">
+                        </picture>
+                    </div>
                 </div>
             </div>
         </div>
