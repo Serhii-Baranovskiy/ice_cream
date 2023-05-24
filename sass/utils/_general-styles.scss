@@ -70,10 +70,15 @@ img {
 }
 
 .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 152px;
     height: 42px;
     border: none;
     border-radius: 10px;
 
     background-color: getColor('accent-color-secondary');
+
+    font-weight: 600;
 }

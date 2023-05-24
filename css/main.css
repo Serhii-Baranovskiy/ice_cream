@@ -2,7 +2,7 @@ body {
   background-repeat: repeat-y;
   background-size: contain;
   background-attachment: fixed;
-  font-family: Montserat, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   letter-spacing: 0.04em;
 }
@@ -64,11 +64,21 @@ img {
 }
 
 .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 152px;
   height: 42px;
   border: none;
   border-radius: 10px;
   background-color: #F8D24E;
+  font-weight: 600;
 }
 
 .section-header-hero {
@@ -168,6 +178,12 @@ img {
   margin-top: 114px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.mobile-menu-btn__svg {
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
 }
 
 .btn-menu {
@@ -313,4 +329,132 @@ img {
   .picture-hero__img-cone-ice-cream {
     right: 5%;
   }
+}
+.section-products {
+  text-align: center;
+}
+
+.section-products__label-title {
+  display: inline-block;
+  margin-top: 60px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+}
+
+.section-products__title {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-family: Seymour One;
+  font-size: 30px;
+  line-height: 1.26;
+  text-transform: uppercase;
+}
+
+.card-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  max-width: 320px;
+  min-height: 420px;
+  width: 100%;
+  margin-top: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 24px;
+  background-color: #EFD478;
+}
+.card-products:not(:first-child) {
+  margin-top: 160px;
+}
+.card-products::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 211px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-radius: 50%;
+  background-image: url("../../images/products/product-ice-coffee.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #EFD478;
+  -webkit-box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+          box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.card-products--first-card {
+  background-color: #AEC6A5;
+}
+.card-products--first-card::after {
+  background-image: url("../../images/products/product-ice-cream.png");
+  background-color: #AEC6A5;
+}
+.card-products--last-card {
+  background-color: #D6936D;
+}
+.card-products--last-card::after {
+  background-image: url("../../images/products/product-milkshakes.png");
+  background-color: #D6936D;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .card-products::after {
+    background-image: url("../../images/products/product-ice-coffee@2x.png");
+  }
+  .card-products--first-card::after {
+    content: "";
+    background-image: url("../../images/products/product-ice-cream@2x.png");
+  }
+  .card-products--last-card::after {
+    content: "";
+    background-image: url("../../images/products/product-milkshakes@2x.png");
+  }
+}
+.card-products__title {
+  padding-top: 126px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.card-products__description {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 0;
+  line-height: 1.76;
+}
+
+.card-products__btn {
+  position: absolute;
+  bottom: 0;
+  width: 56px;
+  height: 22px;
+  border: none;
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+.card-products__btn:hover, .card-products__btn:focus {
+  cursor: pointer;
+}
+
+.card-products__svg-btn {
+  width: 40px;
+  height: 16px;
 }/*# sourceMappingURL=main.css.map */

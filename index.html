@@ -39,7 +39,11 @@
                     </ul>
                 </nav>
 
-                <button class="btn mobile-menu-btn">Buy now</button>
+                <button class="btn mobile-menu-btn">Buy now
+                    <svg class="mobile-menu-btn__svg">
+                        <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
+                    </svg>
+                </button>
             </div>
             
             <button
@@ -93,22 +97,36 @@
 
     <main>
         <div class="section-products container">
-            <h2 class="section-products__title">products</h2>
-            <ul class="list">
-                <li class="card-products">
+            <label class="section-products__label-title" for="products-title"> 100% natural
+                <h2 id="products-title" class="section-products__title">products</h2>
+            </label>
+            <ul class="list card-block">
+                <li class="card-products card-products--first-card">
                     <h3 class="card-products__title">Ice cream</h3>
                     <p class="card-products__description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
-                    <button class="card-products__btn"></button>
+                    <button class="card-products__btn">
+                        <svg class="card-products__svg-btn">
+                            <use class="card-products__icon-btn" href="./images/sprite-icons.svg#icon-card-arrow"></use>
+                        </svg>
+                    </button>
                 </li>
                 <li class="card-products">
                     <h3 class="card-products__title">Ice coffe</h3>
                     <p class="card-products__description">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
-                    <button class="card-products__btn"></button>
+                    <button class="card-products__btn">
+                        <svg class="card-products__svg-btn">
+                            <use class="card-products__icon-btn" href="./images/sprite-icons.svg#icon-card-arrow"></use>
+                        </svg>
+                    </button>
                 </li>
-                <li class="card-products">
+                <li class="card-products card-products--last-card">
                     <h3 class="card-products__title">Milkshakes</h3>
                     <p class="card-products__description">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</p>
-                    <button class="card-products__btn"></button>
+                    <button class="card-products__btn">
+                        <svg class="card-products__svg-btn">
+                            <use class="card-products__icon-btn" href="./images/sprite-icons.svg#icon-card-arrow"></use>
+                        </svg>
+                    </button>
                 </li>
             </ul>
         </div>
