@@ -41,6 +41,10 @@
         margin-top: 160px;
     }
 
+    &:last-child{
+        margin-bottom: 60px;
+    }
+
     &::after{
         content: '';
         display: block;

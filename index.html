@@ -133,8 +133,9 @@
     </main>
 
     <div class="section-about container">
-        <h2 class="section-about__title">How it's made?</h2>
-        <img src="" alt="cow on the lawn near the forest" class="section-about__image">
+        <label class="section-about__label-title" for="about-title">tradition and love
+            <h2 id="about-title" class="section-about__title">How it's made?</h2>
+        </label>
         <div class="section-about__text-description">
             <p>Ice is a place where you will become not only a little happier, but also healthier. 
                 Health is the main value for us, and we follow it when creating our handmade desserts.</p>
@@ -143,7 +144,11 @@
                 Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
             <p>This is enough to choose ice cream and coffee for any mood!</p>
 
-            <button class="btn">Read more</button>
+            <button class="btn about-btn">Read more
+                <svg class="mobile-menu-btn__svg">
+                    <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
+                </svg>
+            </button>
         </div>
     </div>
 
@@ -151,7 +156,7 @@
         <h2 hidden>Advantages</h2>
 
         <ul class="list">
-            <li class="section-advantages__item">
+            <li class="section-advantages__item section-advantages__item--first-item">
                 <p class="section-advantages__value">721</p>
                 <p class="section-advantages__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>
@@ -159,7 +164,7 @@
                 <p class="section-advantages__value">16kg</p>
                 <p class="section-advantages__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>
-            <li class="section-advantages__item">
+            <li class="section-advantages__item section-advantages__item--last-item">
                 <p class="section-advantages__value">84</p>
                 <p class="section-advantages__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>

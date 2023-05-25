@@ -376,6 +376,9 @@ img {
 .card-products:not(:first-child) {
   margin-top: 160px;
 }
+.card-products:last-child {
+  margin-bottom: 60px;
+}
 .card-products::after {
   content: "";
   display: block;
@@ -457,4 +460,118 @@ img {
 .card-products__svg-btn {
   width: 40px;
   height: 16px;
+}
+
+.section-about {
+  text-align: center;
+  background-color: #84A178;
+}
+.section-about__label-title {
+  display: inline-block;
+  margin-top: 60px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+
+.section-about__title {
+  width: 200px;
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-family: Seymour One;
+  font-size: 30px;
+  line-height: 1.27;
+  text-transform: uppercase;
+}
+
+.section-about__text-description {
+  position: relative;
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 382px;
+  font-size: 12px;
+  line-height: 1.76;
+  color: #FCFCFC;
+}
+.section-about__text-description::before {
+  content: "";
+  width: 280px;
+  height: 300px;
+  position: absolute;
+  top: -46%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+          box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  background: url("../../images/about.png") 0 22px, -webkit-gradient(linear, left bottom, left top, from(rgba(248, 210, 78, 0.7)), to(rgba(248, 210, 78, 0.7))), #D9D9D9;
+  background: url("../../images/about.png") 0 22px, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-about__text-description::before {
+    background: url("../../images/about@2x.png") 0 22px, -webkit-gradient(linear, left bottom, left top, from(rgba(248, 210, 78, 0.7)), to(rgba(248, 210, 78, 0.7))), #D9D9D9;
+    background: url("../../images/about@2x.png") 0 22px, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.about-btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+}
+
+.section-advantages {
+  padding-bottom: 81px;
+  padding-top: 60px;
+  text-align: center;
+  background-color: #84A178;
+}
+
+.section-advantages__item {
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-advantages__item::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background-color: #F8D24E;
+  background-image: url("../../images/advantages-weight.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section-advantages__item--first-item::before {
+  background-image: url("../../images/advantages-cow.png");
+}
+.section-advantages__item--last-item::before {
+  background-image: url("../../images/advantages-ice-crema.png");
+}
+
+.section-advantages__value {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  color: #FCFCFC;
+}
+
+.section-advantages__description {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #FCFCFC;
 }/*# sourceMappingURL=main.css.map */
