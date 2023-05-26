@@ -86,7 +86,7 @@
                             <source srcset="./images/cone-ice-cream480.png 1x, ./images/cone-ice-cream480@2x.png 2x" media="(max-width: 480px)">
                         <img 
                             class="picture-hero__img-cone-ice-cream"
-                            src="./images/cone-ice-cream.png" 
+                            src="./images/cone-ice-cream320.png" 
                             alt="cone-ice-cream">
                         </picture>
                     </div>
@@ -190,7 +190,7 @@
     <div class="section-contacts container">
         <h2 hidden>Contacts</h2>
 
-        <ul class="list">
+        <ul class="list section-contacts__block-item">
             <li class="section-contacts__item">
                 <ul class="list">
                     <li class="section-contacts__category">Cafe</li>
@@ -244,19 +244,47 @@
             </li>
         </ul>
 
-        <button class="btn">Our locations</button>
-        <button class="btn">Franchise</button>
+        <button class="btn contacts-btn">Our locations
+            <svg class="mobile-menu-btn__svg">
+                <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
+            </svg>
+        </button>
+        <button class="btn contacts-btn contacts-btn--bg-transparent">Franchise
+            <svg class="mobile-menu-btn__svg">
+                <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
+            </svg>
+        </button>
     </div>
     <footer>
-        <div class="section-footer container">
-            <h2 hidden>Homemade ice cream made with passion</h2>
-            <p>Homemade ice cream made with passion</p>
-            <ul class="list">
-                <li class="section-footer__social-link"><a href="https://github.com/">github</a></li>
-                <li class="section-footer__social-link"><a href="https://web.telegram.org/">telegram</a></li>
-                <li class="section-footer__social-link"><a href="https://www.facebook.com/">facebook</a></li>
-            </ul>
-            <p>Feel free to contact <a href="tel:+61 (0) 383 766 284">+61 (0) 383 766 284</a></p>
+        <div class="section-footer">
+            <div class="container">
+                <h2 hidden>Homemade ice cream made with passion</h2>
+                <p class="section-footer__title">Homemade ice cream made</p>
+                <p class="section-footer__title-big-words">with passion</p>
+                <ul class="list section-footer__block-social">
+                    <li class="section-footer__social-link"><a href="https://github.com/">
+                        <svg class="section-footer__social-svg">
+                            <use class="section-footer__social-icon" href="./images/sprite-icons.svg#icon-footer-github"></use>
+                        </svg>
+                    </a></li>
+                    <li class="section-footer__social-link"><a href="https://web.telegram.org/">
+                        <svg class="section-footer__social-svg">
+                            <use class="section-footer__social-icon" href="./images/sprite-icons.svg#icon-footer-telegram"></use>
+                        </svg>
+                    </a></li>
+                    <li class="section-footer__social-link"><a href="https://www.facebook.com/">
+                        <svg class="section-footer__social-svg">
+                            <use class="section-footer__social-icon" href="./images/sprite-icons.svg#icon-footer-facebook"></use>
+                        </svg>
+                    </a></li>
+                </ul>
+                <p class="section-footer__contact-mobile">Feel free to contact 
+                    <a class="link section-footer__contact-mobile--color-number" href="tel:+61 (0) 383 766 284">+61 (0) 383 766 284</a>
+                </p>
+            </div>
+            <div class="section-footer__license">
+                <p>© 2022 - IceCream. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
