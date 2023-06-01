@@ -10,56 +10,111 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body>
-    <header>
+<body open-modal>
+    <header id="home">
         <div class="section-header-hero container">
 
             <a href="" class="logo link"></a>
 
-            <div class="block-nav">
-                <nav class="navigation">
+            <nav class="navigation">
+                <div class="block-nav">
                     <ul class="list">
-                        <li class="navigation__item"><a href="" class="link">Home</a></li>
-                        <li class="navigation__item"><a href="" class="link">How it's made?</a></li>
-                        <li class="navigation__item"><a href="" class="link">Our products</a></li>
-                        <li class="navigation__item"><a href="" class="link">Contact</a></li>
+                        <li class="navigation__item"><a href="#home" class="link">Home</a></li>
+                        <li class="navigation__item"><a href="#about-title" class="link">How it's made?</a></li>
+                        <li class="navigation__item"><a href="#products-title" class="link">Our products</a></li>
+                        <li class="navigation__item"><a href="#contacts" class="link">Contact</a></li>
                     </ul>
-                </nav>
 
-                <button class="btn">Buy now</button>
-            </div>
+                    <button class="btn">Buy now</button>
+                </div>
 
-            <div class="mobile-menu" data-menu>
-                <nav class="mobile-nav">
-                    <ul class="list mobile-nav__list">
-                        <li class="mobile-nav__item"><a href="" class="link mobile-nav__navigation mobile-nav__active-page">Home</a></li>
-                        <li class="mobile-nav__item"><a href="" class="link mobile-nav__navigation">How it's made?</a></li>
-                        <li class="mobile-nav__item"><a href="" class="link mobile-nav__navigation">Our products</a></li>
-                        <li class="mobile-nav__item"><a href="" class="link mobile-nav__navigation">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <button class="btn mobile-menu-btn">Buy now
-                    <svg class="mobile-menu-btn__svg">
-                        <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
+                <div class="mobile-menu" data-menu>
+                    <nav class="mobile-nav">
+                        <ul class="list mobile-nav__list">
+                            <li class="mobile-nav__item"><a href="#home" class="link mobile-nav__navigation mobile-nav__active-page">Home</a></li>
+                            <li class="mobile-nav__item"><a href="#about-title" class="link mobile-nav__navigation">How it's made?</a></li>
+                            <li class="mobile-nav__item"><a href="#products-title" class="link mobile-nav__navigation">Our products</a></li>
+                            <li class="mobile-nav__item"><a href="#contacts" class="link mobile-nav__navigation">Contact</a></li>
+                        </ul>
+                    </nav>
+    
+                    <button class="btn mobile-menu-btn" data-modal-open>Buy now
+                        <svg class="mobile-menu-btn__svg">
+                            <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+                
+                <button
+                    class="btn-menu"
+                    aria-expanded="false"
+                    data-menu-button>
+                    <svg class="btn-menu__svg" aria-label="Перемикач мобільного меню">
+                        <use class="btn-menu__icon-menu" href="./images/sprite-icons.svg#icon-menu-mobile"></use>
+                        <use class="btn-menu__icon-cross" href="./images/sprite-icons.svg#icon-close-mobile"></use>
                     </svg>
                 </button>
+            </nav>
+
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal-window">
+                    <h2 class="modal-window__title">Buy now</h2>
+
+                    <button type="button" class="modal-window__btn" data-modal-close>
+                        <svg class="modal-window__icon-btn">
+                            <use href="./images/sprite-icons.svg#icon-close-modal"></use>
+                        </svg>
+                    </button>
+
+                    <form class="form-modal">
+                        <ul class="list">
+                            <li class="form-modal__product form-modal__product--first">
+                                <label class="form-modal__label" for="modal-ice-cream">
+                                    Ice cream<input class="form-modal__input-product" type="checkbox" name="ice-cream" id="modal-ice-cream">
+                                </label>
+                            </li>
+                            <li class="form-modal__product">
+                                <label class="form-modal__label" for="modal-ice-coffee">
+                                    Ice coffee<input class="form-modal__input-product" type="checkbox" name="ice-coffe" id="modal-ice-coffee">
+                                </label>
+                            </li>
+                            <li class="form-modal__product form-modal__product--last">
+                                <label class="form-modal__label" for="modal-milkshake">
+                                    Milkshake<input class="form-modal__input-product" type="checkbox" name="milkshake" id="modal-milkshake">
+                                </label>
+                            </li>
+                        </ul>
+                        <input 
+                            type="text" 
+                            name="date-name" 
+                            class="form-modal__input" 
+                            title="Please enter valid name"
+                            placeholder="Name"
+                            pattern="[a-z]{1,15}">
+
+                        <input 
+                            type="tel" 
+                            name="date-phone" 
+                            class="form-modal__input" 
+                            title="Please enter valid phone number"
+                            placeholder="Phone"
+                            pattern="[0-9]{10}">
+
+                        <textarea 
+                            name="date-comment" 
+                            class="form-modal__comment"
+                            placeholder="Comment"></textarea>
+
+                        <button type="button" class="btn form-modal__btn" data-modal-close>Submit</button>
+                    </form>
+
+                </div>
             </div>
-            
-            <button
-                class="btn-menu"
-                aria-expanded="false"
-                data-menu-button>
-                <svg class="btn-menu__svg" aria-label="Перемикач мобільного меню">
-                    <use class="btn-menu__icon-menu" href="./images/sprite-icons.svg#icon-menu-mobile"></use>
-                    <use class="btn-menu__icon-cross" href="./images/sprite-icons.svg#icon-close-mobile"></use>
-                </svg>
-            </button>
 
             <div class="hero">
                 <h1 class="hero__title">Ice cream made with <span class="hero__title--last-word">passion</span></h1>
-                <a href="" class="link hero__btn">Products</a>
-                <a href="" class="link hero__btn-link">How it's made</a>
+                <a href="#products-title" class="link hero__btn">Products</a>
+                <a href="#about-title" class="link hero__btn-link">How it's made</a>
                 
 
                 <div class="number-point">
@@ -190,7 +245,7 @@
     <div class="section-contacts container">
         <h2 hidden>Contacts</h2>
 
-        <ul class="list section-contacts__block-item">
+        <ul id="contacts" class="list section-contacts__block-item">
             <li class="section-contacts__item">
                 <ul class="list">
                     <li class="section-contacts__category">Cafe</li>
@@ -255,6 +310,7 @@
             </svg>
         </button>
     </div>
+
     <footer>
         <div class="section-footer">
             <div class="container">
@@ -288,6 +344,7 @@
         </div>
     </footer>
 
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

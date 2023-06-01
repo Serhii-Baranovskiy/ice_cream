@@ -92,16 +92,13 @@
     &:hover {
         cursor: pointer;
     }
-
-    &:hover .btn-menu__icon-cross,
-    &:focus .btn-menu__icon-cross {
-        fill: #2196F3;
-    }
 }
 
 .btn-menu__svg {
     width: 32px;
     height: 32px;
+
+    fill: #ffffff;
 
     & .btn-menu__icon-cross {
         display: none;
