@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body open-modal>
+<body open-modal-header open-modal-product>
     <header id="home">
         <div class="section-header-hero container">
 
@@ -38,7 +38,7 @@
                         </ul>
                     </nav>
     
-                    <button class="btn mobile-menu-btn" data-modal-open>Buy now
+                    <button class="btn mobile-menu-btn" data-modal-header-open>Buy now
                         <svg class="mobile-menu-btn__svg">
                             <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
                         </svg>
@@ -56,41 +56,41 @@
                 </button>
             </nav>
 
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal-window">
-                    <h2 class="modal-window__title">Buy now</h2>
+            <div class="backdrop-mobile-header is-hidden-modal-header" data-modal-header>
+                <div class="modal-window-header">
+                    <h2 class="modal-window-header__title">Buy now</h2>
 
-                    <button type="button" class="modal-window__btn" data-modal-close>
-                        <svg class="modal-window__icon-btn">
+                    <button type="button" class="modal-window-header__btn" data-modal-header-close>
+                        <svg class="modal-window-header__icon-btn">
                             <use href="./images/sprite-icons.svg#icon-close-modal"></use>
                         </svg>
                     </button>
 
-                    <form class="form-modal">
+                    <form class="form-modal-header">
                         <ul class="list">
-                            <li class="form-modal__product form-modal__product--first">
-                                <label class="form-modal__label" for="modal-ice-cream">
-                                    <input class="form-modal__input-product" type="checkbox" name="ice-cream" id="modal-ice-cream">
-                                    <span class="form-modal__bg-label form-modal__bg-label--first">Ice cream</span>
+                            <li class="form-modal-header__product form-modal-header__product--first">
+                                <label class="form-modal-header__label" for="modal-ice-cream">
+                                    <input class="form-modal-header__input-product" type="checkbox" name="ice-cream" id="modal-ice-cream">
+                                    <span class="form-modal-header__bg-label form-modal-header__bg-label--first">Ice cream</span>
                                 </label>
                             </li>
-                            <li class="form-modal__product">
-                                <label class="form-modal__label" for="modal-ice-coffee">
-                                    <input class="form-modal__input-product" type="checkbox" name="ice-coffe" id="modal-ice-coffee">
-                                    <span class="form-modal__bg-label">Ice coffee</span>
+                            <li class="form-modal-header__product">
+                                <label class="form-modal-header__label" for="modal-ice-coffee">
+                                    <input class="form-modal-header__input-product" type="checkbox" name="ice-coffe" id="modal-ice-coffee">
+                                    <span class="form-modal-header__bg-label">Ice coffee</span>
                                 </label>
                             </li>
-                            <li class="form-modal__product form-modal__product--last">
-                                <label class="form-modal__label" for="modal-milkshake">
-                                    <input class="form-modal__input-product" type="checkbox" name="milkshake" id="modal-milkshake">
-                                    <span class="form-modal__bg-label form-modal__bg-label--last">Milkshake</span>
+                            <li class="form-modal-header__product form-modal-header__product--last">
+                                <label class="form-modal-header__label" for="modal-milkshake">
+                                    <input class="form-modal-header__input-product" type="checkbox" name="milkshake" id="modal-milkshake">
+                                    <span class="form-modal-header__bg-label form-modal-header__bg-label--last">Milkshake</span>
                                 </label>
                             </li>
                         </ul>
                         <input 
                             type="text" 
                             name="date-name" 
-                            class="form-modal__input" 
+                            class="form-modal-header__input" 
                             title="Please enter valid name"
                             placeholder="Name"
                             pattern="[a-z]{1,15}">
@@ -98,17 +98,17 @@
                         <input 
                             type="tel" 
                             name="date-phone" 
-                            class="form-modal__input" 
+                            class="form-modal-header__input" 
                             title="Please enter valid phone number"
                             placeholder="Phone"
                             pattern="[0-9]{10}">
 
                         <textarea 
                             name="date-comment" 
-                            class="form-modal__comment"
+                            class="form-modal-header__comment"
                             placeholder="Comment"></textarea>
 
-                        <button type="button" class="btn form-modal__btn" data-modal-close>Submit</button>
+                        <button type="button" class="btn form-modal-header__btn" data-modal-header-close>Submit</button>
                     </form>
 
                 </div>
@@ -162,7 +162,7 @@
                 <li class="card-products card-products--first-card">
                     <h3 class="card-products__title">Ice cream</h3>
                     <p class="card-products__description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
-                    <button class="card-products__btn">
+                    <button class="card-products__btn" data-modal-product-open-first>
                         <svg class="card-products__svg-btn">
                             <use class="card-products__icon-btn" href="./images/sprite-icons.svg#icon-card-arrow"></use>
                         </svg>
@@ -171,7 +171,7 @@
                 <li class="card-products">
                     <h3 class="card-products__title">Ice coffe</h3>
                     <p class="card-products__description">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
-                    <button class="card-products__btn">
+                    <button class="card-products__btn" data-modal-product-open-second>
                         <svg class="card-products__svg-btn">
                             <use class="card-products__icon-btn" href="./images/sprite-icons.svg#icon-card-arrow"></use>
                         </svg>
@@ -180,13 +180,52 @@
                 <li class="card-products card-products--last-card">
                     <h3 class="card-products__title">Milkshakes</h3>
                     <p class="card-products__description">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</p>
-                    <button class="card-products__btn">
+                    <button class="card-products__btn" data-modal-product-open-third>
                         <svg class="card-products__svg-btn">
                             <use class="card-products__icon-btn" href="./images/sprite-icons.svg#icon-card-arrow"></use>
                         </svg>
                     </button>
                 </li>
             </ul>
+        </div>
+
+        <div class="backdrop-mobile-product is-hidden-modal-product" data-modal-product>
+            <div class="modal-window-product">
+                <h2 class="modal-window-product__title">Chololate icecream</h2>
+
+                <button type="button" class="modal-window-product__btn" data-modal-product-close>
+                    <svg class="modal-window-product__icon-btn">
+                        <use href="./images/sprite-icons.svg#icon-close-modal"></use>
+                    </svg>
+                </button>
+
+                <form class="form-modal-product">
+                
+                    <input 
+                        type="text" 
+                        name="date-name" 
+                        class="form-modal-product__input" 
+                        title="Please enter valid name"
+                        placeholder="Name"
+                        pattern="[a-z]{1,15}">
+
+                    <input 
+                        type="tel" 
+                        name="date-phone" 
+                        class="form-modal-product__input" 
+                        title="Please enter valid phone number"
+                        placeholder="Phone"
+                        pattern="[0-9]{10}">
+
+                    <textarea 
+                        name="date-comment" 
+                        class="form-modal-product__comment"
+                        placeholder="Comment"></textarea>
+
+                    <button type="button" class="btn form-modal-header__btn" data-modal-product-close>Submit</button>
+                </form>
+
+            </div>
         </div>
     </main>
 
