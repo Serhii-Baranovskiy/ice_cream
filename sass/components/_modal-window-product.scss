@@ -65,12 +65,113 @@
 .form-modal-product{
     position: relative;
     padding-bottom: 29px;
+    margin-top: 181px;
+}
+
+.form-modal-product__block-nutritional-value{
+    display: flex;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    &::before{
+        content: '';
+        width: 132px;
+        height: 139px;
+        margin-bottom: 22px;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        border-radius: 50%;
+        transform: translateX(-50%);
+
+        background: url("../../images/products/product-modal-ice-ream.png"), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+        background-repeat: no-repeat;
+    }
+}
+
+.form-modal-product__nutritional-value{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+
+    &:not(:last-child){
+        margin-right: 9px;
+    }
+
+    & p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    & p:first-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        margin-bottom: 6px;
+        margin-top: -2px;
+        border-radius: 50%;
+        border: 2px solid #9CBE8F;
+
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 2.8;
+
+        background: #9CBE8F;
+        box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    }
+
+    & p:last-child{
+        font-size: 10px;
+        line-height: 1.2;
+    }
+}
+
+.form-modal-product__title{
+    margin-bottom: 24px;
+    margin-top: 40px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.form-modal-product__block-ingredient{
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.form-modal-product__ingredient{
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 14px;
+    line-height: 1.76;
+
+    & p{
+        margin-top: 11px;
+        margin-bottom: 0;
+    }
+
+    &:first-child p{
+        margin-top: 0;
+    }
 }
 
 .form-modal-product__input,
 .form-modal-product__comment {
     display: flex;
-    width: 224px;
+    width: 240px;
     height: 42px;
     padding: 8px 12px;
     margin-left: auto;
