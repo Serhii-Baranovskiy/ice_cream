@@ -11,6 +11,11 @@
       closeModalProductBtn: document.querySelector("[data-modal-product-close]"),
       modalProduct: document.querySelector("[data-modal-product]"),
       openProduct: document.querySelector("[open-modal-product]"),
+
+      openModalAboutBtn: document.querySelector("[data-modal-about-open]"),
+      closeModalAboutBtn: document.querySelector("[data-modal-about-close]"),
+      modalAbout: document.querySelector("[data-modal-about]"),
+      openAbout: document.querySelector("[open-modal-about]"),
     };
   
     refs.openModalHeaderBtn.addEventListener("click", toggleModalHeader);
@@ -20,6 +25,9 @@
     refs.openModalProductBtnTwo.addEventListener("click", toggleModalProduct);
     refs.openModalProductBtnThree.addEventListener("click", toggleModalProduct);
     refs.closeModalProductBtn.addEventListener("click", toggleModalProduct);
+
+    refs.openModalAboutBtn.addEventListener("click", toggleModalAbout);
+    refs.closeModalAboutBtn.addEventListener("click", toggleModalAbout);
   
     function toggleModalHeader() {
       refs.modalHeader.classList.toggle("is-hidden-modal-header");
@@ -29,5 +37,10 @@
     function toggleModalProduct() {
       refs.modalProduct.classList.toggle("is-hidden-modal-product");
       refs.openProduct.classList.toggle("is-open-modal-product");
+    }
+
+    function toggleModalAbout() {
+      refs.modalAbout.classList.toggle("is-hidden-modal-about");
+      refs.openAbout.classList.toggle("is-open-modal-about");
     }
   })();

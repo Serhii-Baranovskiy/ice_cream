@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body open-modal-header open-modal-product>
+<body open-modal-header open-modal-product open-modal-about>
     <header id="home">
         <div class="section-header-hero container">
 
@@ -287,11 +287,37 @@
                 Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
             <p>This is enough to choose ice cream and coffee for any mood!</p>
 
-            <button class="btn about-btn">Read more
+            <button class="btn about-btn"data-modal-about-open>Read more
                 <svg class="mobile-menu-btn__svg">
                     <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
                 </svg>
             </button>
+        </div>
+
+        <div class="backdrop-mobile-about is-hidden-modal-about" data-modal-about>
+            <div class="modal-window-about">
+                <h2 class="modal-window-about__title">How it's made?</h2>
+
+                <button type="button" class="modal-window-about__btn" data-modal-about-close>
+                    <svg class="modal-window-about__icon-btn">
+                        <use href="./images/sprite-icons.svg#icon-close-modal"></use>
+                    </svg>
+                </button>
+
+                <iframe 
+                    width="224" 
+                    src="https://www.youtube.com/embed/JM9VFGXXoVg" 
+                    title="ice cream production" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+
+                <p class="modal-window-about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+
+            </div>
         </div>
     </div>
 

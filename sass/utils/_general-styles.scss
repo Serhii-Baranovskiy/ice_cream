@@ -43,7 +43,8 @@ body {
 }
 
 body.is-open-modal-header,
-body.is-open-modal-product{
+body.is-open-modal-product,
+body.is-open-modal-about{
     height: 100vh;
     overflow: hidden;
 }
