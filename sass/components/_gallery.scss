@@ -1,12 +1,118 @@
+@keyframes animation-img{
+    from{
+        opacity: 1;
+        z-index: 30;
+    }
+    27%{
+        opacity: 1;
+        z-index: 30;
+    }
+    33%{
+        opacity: 0;
+        z-index: 30;
+    }
+    60%{
+        opacity: 0;
+        z-index: 10;
+    }
+    66%{
+        opacity: 0;
+        z-index: 10;
+    }
+    93%{
+        opacity: 1;
+        z-index: 20;
+    }
+    to{
+        opacity: 1;
+        z-index: 20;
+    }
+}
+
+@keyframes animation-img-first{
+    from{
+        opacity: 0;
+        z-index: 20;
+    }
+    27%{
+        opacity: 1;
+        z-index: 20;
+    }
+    33%{
+        opacity: 1;
+        z-index: 20;
+    }
+    60%{
+        opacity: 1;
+        z-index: 30;
+    }
+    66%{
+        opacity: 0;
+        z-index: 30;
+    }
+    93%{
+        opacity: 0;
+        z-index: 10;
+    }
+    to{
+        opacity: 0;
+        z-index: 10;
+    }
+}
+
+@keyframes animation-img-last{
+    from{
+        opacity: 0;
+        z-index: 10;
+    }
+    27%{
+        opacity: 0;
+        z-index: 10;
+    }
+    33%{
+        opacity: 0;
+        z-index: 10;
+    }
+    60%{
+        opacity: 1;
+        z-index: 20;
+    }
+    66%{
+        opacity: 1;
+        z-index: 20;
+    }
+    93%{
+        opacity: 1;
+        z-index: 30;
+    }
+    to{
+        opacity: 0;
+        z-index: 30;
+    }
+}
+
 .section-galery{
     position: relative;
 }
 
 .section-galery__img-galery{
-    position: absolute;
+    position: relative;
     top: -50px;
 }
 
 .section-galery__img-item{
+    position: absolute;
     border-radius: 8px;
+    z-index: 20;
+    animation: animation-img 9s linear 3s infinite;
+
+    &--first{
+        z-index: 30;
+        animation: animation-img 9s linear infinite;
+    }
+
+    &--last{
+        z-index: 10;
+        animation: animation-img 9s linear 6s infinite;
+    }
 }
