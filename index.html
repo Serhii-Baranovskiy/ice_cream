@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice Cream</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Seymour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -366,8 +367,39 @@
         </div>
     </div>
 
-    <div class="section-customer-reviews container">
-        <div class="section-customer-reviews__slider"></div>
+    <div class="section-customer-reviews container" uk-slider="finite: true" >
+        <div class="section-customer-reviews__slider">
+            <ul class="list container-customer-review uk-slider-items .uk-width-1-1">
+                <li class="customer-review">
+                    <div class="customer-review__block-review customer-review__block-review--first">
+                        <p class="customer-review__text">I love visiting your cafe. You prepare the most 
+                            delicious ice cream in Los Angeles! In addition, 
+                            you have beautiful serving, cozy atmosphere and 
+                            polite staff.</p>
+                    </div>
+
+                    <p class="customer-review__name-and-city">Emily, Los Angeles</p>
+                </li>
+                <li class="customer-review">
+                    <div class="customer-review__block-review">
+                        <p class="customer-review__text">Every day we come to you with friends after 
+                            classes in college. We love your ice cream and casual atmosphere!</p>
+                    </div>
+
+                    <p class="customer-review__name-and-city">Bryan, New-York</p>
+                </li>
+                <li class="customer-review">
+                    <div class="customer-review__block-review customer-review__block-review--last">
+                        <p class="customer-review__text">Ice cream is my passion! I love your chocolate 
+                            hazelnut ice cream! And I really like the excellent service - always served 
+                            politely and quickly!</p>
+                    </div>
+
+                    <p class="customer-review__name-and-city">Diana, Chicago</p>
+                </li>
+            </ul>
+        </div>
+        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
     </div>
 
     <div class="section-contacts container">
@@ -474,5 +506,6 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="js/uikit.min.js"></script>
 </body>
 </html>

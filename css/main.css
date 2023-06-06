@@ -1393,6 +1393,8 @@ input:invalid {
 }
 .section-galery {
   position: relative;
+  height: 154px;
+  margin-bottom: 80px;
 }
 
 .section-galery__img-galery {
@@ -1424,11 +1426,99 @@ input:invalid {
 
 .section-customer-reviews__slider {
   width: 280px;
-  height: 466px;
+  height: 440px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 234px;
-  border: 1px solid black;
+  overflow: hidden;
+}
+
+.container-customer-review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.customer-review__block-review {
+  min-height: 256px;
+  padding: 35px 39px;
+  margin-top: 117px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #84A178;
+  font-weight: inherit;
+  font-size: 12px;
+  line-height: 2.55;
+  color: #FCFCFC;
+}
+.customer-review__block-review::before {
+  content: "";
+  position: absolute;
+  top: -117px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 85px;
+  height: 85px;
+  background-image: url("../../images/avatar/avatar-client2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.customer-review__block-review--first::before {
+  background-image: url("../../images/avatar/avatar-client1.png");
+}
+.customer-review__block-review--last::before {
+  background-image: url("../../images/avatar/avatar-client3.png");
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .customer-review__block-review::before {
+    background-image: url("../../images/avatar/avatar-client2@2x.png");
+  }
+  .customer-review__block-review--first::before {
+    background-image: url("../../images/avatar/avatar-client1@2x.png");
+  }
+  .customer-review__block-review--last::before {
+    background-image: url("../../images/avatar/avatar-client3@2x.png");
+  }
+}
+.customer-review__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.customer-review__name-and-city {
+  margin-top: 32px;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+}
+
+.uk-dotnav > * > * {
+  width: 12px;
+  height: 12px;
+  background-color: #D9D9D9;
+  border: none;
+}
+
+.uk-dotnav > .uk-active > * {
+  background-color: #84A178;
+}
+
+* + .uk-margin {
+  margin-top: 12px !important;
+}
+
+.uk-margin {
+  margin-bottom: 0;
+}
+
+.uk-dotnav > * {
+  padding-left: 18px;
 }
 
 .section-contacts {
