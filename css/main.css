@@ -1159,10 +1159,15 @@ input:invalid {
 }
 
 .section-advantages {
-  padding-bottom: 81px;
+  padding-bottom: 51px;
   padding-top: 60px;
   text-align: center;
   background-color: #84A178;
+}
+@media screen and (max-width: 425px) {
+  .section-advantages {
+    padding-bottom: 38px;
+  }
 }
 
 .section-advantages__item {
@@ -1192,6 +1197,9 @@ input:invalid {
 .section-advantages__item--last-item::before {
   background-image: url("../../images/advantages-ice-crema.png");
 }
+.section-advantages__item--last-item {
+  margin-bottom: 30px;
+}
 
 .section-advantages__value {
   margin-top: 16px;
@@ -1210,214 +1218,13 @@ input:invalid {
   color: #FCFCFC;
 }
 
-@-webkit-keyframes animation-img {
-  from {
-    opacity: 1;
-    z-index: 30;
-  }
-  27% {
-    opacity: 1;
-    z-index: 30;
-  }
-  33% {
-    opacity: 0;
-    z-index: 30;
-  }
-  60% {
-    opacity: 0;
-    z-index: 10;
-  }
-  66% {
-    opacity: 0;
-    z-index: 10;
-  }
-  93% {
-    opacity: 1;
-    z-index: 20;
-  }
-  to {
-    opacity: 1;
-    z-index: 20;
-  }
+.section-galery__slider {
+  margin-top: -11%;
+  width: 100%;
 }
 
-@keyframes animation-img {
-  from {
-    opacity: 1;
-    z-index: 30;
-  }
-  27% {
-    opacity: 1;
-    z-index: 30;
-  }
-  33% {
-    opacity: 0;
-    z-index: 30;
-  }
-  60% {
-    opacity: 0;
-    z-index: 10;
-  }
-  66% {
-    opacity: 0;
-    z-index: 10;
-  }
-  93% {
-    opacity: 1;
-    z-index: 20;
-  }
-  to {
-    opacity: 1;
-    z-index: 20;
-  }
-}
-@-webkit-keyframes animation-img-first {
-  from {
-    opacity: 0;
-    z-index: 20;
-  }
-  27% {
-    opacity: 1;
-    z-index: 20;
-  }
-  33% {
-    opacity: 1;
-    z-index: 20;
-  }
-  60% {
-    opacity: 1;
-    z-index: 30;
-  }
-  66% {
-    opacity: 0;
-    z-index: 30;
-  }
-  93% {
-    opacity: 0;
-    z-index: 10;
-  }
-  to {
-    opacity: 0;
-    z-index: 10;
-  }
-}
-@keyframes animation-img-first {
-  from {
-    opacity: 0;
-    z-index: 20;
-  }
-  27% {
-    opacity: 1;
-    z-index: 20;
-  }
-  33% {
-    opacity: 1;
-    z-index: 20;
-  }
-  60% {
-    opacity: 1;
-    z-index: 30;
-  }
-  66% {
-    opacity: 0;
-    z-index: 30;
-  }
-  93% {
-    opacity: 0;
-    z-index: 10;
-  }
-  to {
-    opacity: 0;
-    z-index: 10;
-  }
-}
-@-webkit-keyframes animation-img-last {
-  from {
-    opacity: 0;
-    z-index: 10;
-  }
-  27% {
-    opacity: 0;
-    z-index: 10;
-  }
-  33% {
-    opacity: 0;
-    z-index: 10;
-  }
-  60% {
-    opacity: 1;
-    z-index: 20;
-  }
-  66% {
-    opacity: 1;
-    z-index: 20;
-  }
-  93% {
-    opacity: 1;
-    z-index: 30;
-  }
-  to {
-    opacity: 0;
-    z-index: 30;
-  }
-}
-@keyframes animation-img-last {
-  from {
-    opacity: 0;
-    z-index: 10;
-  }
-  27% {
-    opacity: 0;
-    z-index: 10;
-  }
-  33% {
-    opacity: 0;
-    z-index: 10;
-  }
-  60% {
-    opacity: 1;
-    z-index: 20;
-  }
-  66% {
-    opacity: 1;
-    z-index: 20;
-  }
-  93% {
-    opacity: 1;
-    z-index: 30;
-  }
-  to {
-    opacity: 0;
-    z-index: 30;
-  }
-}
-.section-galery {
-  position: relative;
-  height: 154px;
-  margin-bottom: 80px;
-}
-
-.section-galery__img-galery {
-  position: relative;
-  top: -50px;
-}
-
-.section-galery__img-item {
-  position: absolute;
+.section-galery__block-img {
   border-radius: 8px;
-  z-index: 20;
-  -webkit-animation: animation-img 9s linear 3s infinite;
-          animation: animation-img 9s linear 3s infinite;
-}
-.section-galery__img-item--first {
-  z-index: 30;
-  -webkit-animation: animation-img 9s linear infinite;
-          animation: animation-img 9s linear infinite;
-}
-.section-galery__img-item--last {
-  z-index: 10;
-  -webkit-animation: animation-img 9s linear 6s infinite;
-          animation: animation-img 9s linear 6s infinite;
 }
 
 .section-customer-reviews {
@@ -1427,6 +1234,7 @@ input:invalid {
 .section-customer-reviews__slider {
   width: 280px;
   height: 440px;
+  margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;

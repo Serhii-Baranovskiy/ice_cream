@@ -1,9 +1,13 @@
 .section-advantages{
-    padding-bottom: 81px;
+    padding-bottom: 51px;
     padding-top: 60px;
     text-align: center;
 
     background-color: getColor('accent-color-main');
+
+    @media screen and (max-width: 425px) {
+        padding-bottom: 38px;
+    }
 }
 
 .section-advantages__item{
@@ -36,6 +40,10 @@
 
     &--last-item::before{
         background-image: url('../../images/advantages-ice-crema.png');
+    }
+
+    &--last-item{
+        margin-bottom: 30px;
     }
 }
 

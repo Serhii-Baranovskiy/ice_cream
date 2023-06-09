@@ -342,28 +342,36 @@
     </div>
 
     <div class="section-galery container">
-        <div class="section-galery__img-galery">
-            <picture>
-                <source srcset="./images/gallery/gallery-mobile-1.jpg 1x, ./images/gallery/gallery-mobile-1@2x.jpg 2x">
-                <img 
-                    class="section-galery__img-item section-galery__img-item--first"
-                    src="./images/gallery/gallery-mobile-1.jpg" 
-                    alt="mani ice cream">
-            </picture>
-            <picture>
-                <source srcset="./images/gallery/gallery-mobile-2.jpg 1x, ./images/gallery/gallery-mobile-2@2x.jpg 2x">
-                <img 
-                    class="section-galery__img-item"
-                    src="./images/gallery/gallery-mobile-2.jpg" 
-                    alt="mani ice cream">
-            </picture>
-            <picture>
-                <source srcset="./images/gallery/gallery-mobile-3.jpg 1x, ./images/gallery/gallery-mobile-3@2x.jpg 2x">
-                <img 
-                    class="section-galery__img-item section-galery__img-item--last"
-                    src="./images/gallery/gallery-mobile-3.jpg" 
-                    alt="mani ice cream">
-            </picture>
+        <div class="section-galery__slider" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 6000; ratio: 440:204">
+            <ul class="list uk-slideshow-items">
+                <li class="section-galery__block-img">
+                    <picture>
+                        <source srcset="./images/gallery/gallery-mobile-1.jpg 1x, ./images/gallery/gallery-mobile-1@2x.jpg 2x">
+                        <img 
+                            class="section-galery__img-item"
+                            src="./images/gallery/gallery-mobile-1.jpg" 
+                            alt="mani ice cream">
+                    </picture>
+                </li>
+                <li class="section-galery__block-img">
+                    <picture>
+                        <source srcset="./images/gallery/gallery-mobile-2.jpg 1x, ./images/gallery/gallery-mobile-2@2x.jpg 2x">
+                        <img 
+                            class="section-galery__img-item"
+                            src="./images/gallery/gallery-mobile-2.jpg" 
+                            alt="mani ice cream">
+                    </picture>
+                </li>
+                <li class="section-galery__block-img">
+                    <picture>
+                        <source srcset="./images/gallery/gallery-mobile-3.jpg 1x, ./images/gallery/gallery-mobile-3@2x.jpg 2x">
+                        <img 
+                            class="section-galery__img-item"
+                            src="./images/gallery/gallery-mobile-3.jpg" 
+                            alt="mani ice cream">
+                    </picture>
+                </li>
+            </ul>
         </div>
     </div>
 
