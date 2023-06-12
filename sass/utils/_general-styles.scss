@@ -44,7 +44,9 @@ body {
 
 body.is-open-modal-header,
 body.is-open-modal-product,
-body.is-open-modal-about{
+body.is-open-modal-about,
+body.is-open-modal-contacts-location,
+body.is-open-modal-contacts-franchise{
     height: 100vh;
     overflow: hidden;
 }

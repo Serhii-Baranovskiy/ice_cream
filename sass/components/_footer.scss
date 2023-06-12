@@ -51,6 +51,7 @@
     font-size: 12px;
     line-height: 1.86;
     text-align: right;
+    color: getColor('main-color-text');
 
     &--color-number{
         color: getColor('secondary-color-text');
