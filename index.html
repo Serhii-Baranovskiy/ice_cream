@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body open-modal-header open-modal-product open-modal-about open-modal-contacts-location open-modal-contacts-franchise>
+<body open-modal-header open-modal-product open-modal-about open-modal-location open-modal-franchise>
     <header id="home">
         <div class="section-header-hero container">
 
@@ -57,12 +57,12 @@
                 </button>
             </nav>
 
-            <div class="backdrop-mobile-header is-hidden-modal-header" data-modal-header>
-                <div class="modal-window-header">
-                    <h2 class="modal-window-header__title">Buy now</h2>
+            <div class="backdrop-mobile is-hidden-modal-header" data-modal-header>
+                <div class="modal-window modal-window--header">
+                    <h2 class="modal-window__header-title">Buy now</h2>
 
-                    <button type="button" class="modal-window-header__btn" data-modal-header-close>
-                        <svg class="modal-window-header__icon-btn">
+                    <button type="button" class="btn-close-modal" data-modal-header-close>
+                        <svg class="btn-close-moda__icon">
                             <use href="./images/sprite-icons.svg#icon-close-modal"></use>
                         </svg>
                     </button>
@@ -190,15 +190,15 @@
             </ul>
         </div>
 
-        <div class="backdrop-mobile-product is-hidden-modal-product" data-modal-product>
-            <div class="modal-window-product">
-                <button type="button" class="modal-window-product__btn" data-modal-product-close>
-                    <svg class="modal-window-product__icon-btn">
+        <div class="backdrop-mobile is-hidden-modal-product" data-modal-product>
+            <div class="modal-window modal-window--product">
+                <button type="button" class="btn-close-modal" data-modal-product-close>
+                    <svg class="btn-close-modal__icon">
                         <use href="./images/sprite-icons.svg#icon-close-modal"></use>
                     </svg>
                 </button>
 
-                <h2 class="modal-window-product__title">Chololate icecream</h2>
+                <h2 class="modal-window__product-title">Chololate icecream</h2>
 
                 <form class="form-modal-product">
                     <ul class="list form-modal-product__block-nutritional-value">
@@ -269,7 +269,7 @@
                         class="form-modal-product__comment"
                         placeholder="Comment"></textarea>
 
-                    <button type="button" class="btn form-modal-header__btn" data-modal-product-close>Submit</button>
+                    <button type="button" class="btn form-modal-product__btn" data-modal-product-close>Submit</button>
                 </form>
 
             </div>
@@ -295,12 +295,12 @@
             </button>
         </div>
 
-        <div class="backdrop-mobile-about is-hidden-modal-about" data-modal-about>
-            <div class="modal-window-about">
-                <h2 class="modal-window-about__title">How it's made?</h2>
+        <div class="backdrop-mobile is-hidden-modal-about" data-modal-about>
+            <div class="modal-window modal-window--about">
+                <h2 class="modal-window__about-title">How it's made?</h2>
 
-                <button type="button" class="modal-window-about__btn" data-modal-about-close>
-                    <svg class="modal-window-about__icon-btn">
+                <button type="button" class="btn-close-modal" data-modal-about-close>
+                    <svg class="btn-close-moda__icon">
                         <use href="./images/sprite-icons.svg#icon-close-modal"></use>
                     </svg>
                 </button>
@@ -314,7 +314,7 @@
                     allowfullscreen>
                 </iframe>
 
-                <p class="modal-window-about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                <p class="modal-window__about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                     tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
 
@@ -467,30 +467,30 @@
             </li>
         </ul>
 
-        <button class="btn contacts-btn" data-modal-contacts-location-open>Our locations
+        <button class="btn contacts-btn" data-modal-location-open>Our locations
             <svg class="mobile-menu-btn__svg">
                 <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
             </svg>
         </button>
 
-        <button class="btn contacts-btn contacts-btn--bg-transparent" data-modal-contacts-franchise-open>Franchise
+        <button class="btn contacts-btn contacts-btn--bg-transparent" data-modal-franchise-open>Franchise
             <svg class="mobile-menu-btn__svg">
                 <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
             </svg>
         </button>
 
-        <div class="backdrop-mobile-contacts-location is-hidden-modal-contacts-location" data-modal-contacts-location>
-            <div class="modal-window-contacts-location">
-                <h2 class="modal-window-contacts-location__title">Our Locations</h2>
+        <div class="backdrop-mobile is-hidden-modal-location" data-modal-location>
+            <div class="modal-window modal-window--location">
+                <h2 class="modal-window__location-title">Our Locations</h2>
 
-                <button type="button" class="modal-window-contacts-location__btn" data-modal-contacts-location-close>
-                    <svg class="modal-window-contacts-location__icon-btn">
+                <button type="button" class="btn-close-modal" data-modal-location-close>
+                    <svg class="btn-close-modal__icon">
                         <use href="./images/sprite-icons.svg#icon-close-modal"></use>
                     </svg>
                 </button>
 
                 <iframe 
-                    class="modal-window-contacts-location__map"
+                    class="modal-window__location-map"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20307.67212108917!2d30.484521849999997!3d50.48841425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1686579604596!5m2!1suk!2sua" 
                     style="border:0;" 
                     allowfullscreen="" 
@@ -498,37 +498,39 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
 
-                <a href="https://goo.gl/maps/7UxPEoUKmUtnevJZ7" target="_blank" class="link form-modal-contacts-location__link">
-                    <button 
-                        type="button" 
-                        class="btn form-modal-contacts-location__btn" 
-                        data-modal-contacts-location-close>Open map
-                    </button>
+                <a href="https://goo.gl/maps/7UxPEoUKmUtnevJZ7" 
+                    target="_blank" 
+                    class="link modal-window__location-link">
+                        <button 
+                            type="button" 
+                            class="btn modal-window__location-btn" 
+                            data-modal-contacts-location-close>Open map
+                        </button>
                 </a>
             </div>
         </div>
 
-        <div class="backdrop-mobile-contacts-franchise is-hidden-modal-contacts-franchise" data-modal-contacts-franchise>
-            <div class="modal-window-contacts-franchise">
-                <h2 class="modal-window-contacts-franchise__title">Thank you for your interest in owning an Ice Cream shop</h2>
+        <div class="backdrop-mobile is-hidden-modal-franchise" data-modal-franchise>
+            <div class="modal-window modal-window--franchise">
+                <h2 class="modal-window__franchise-title">Thank you for your interest in owning an Ice Cream shop</h2>
 
-                <button type="button" class="modal-window-contacts-franchise__btn" data-modal-contacts-franchise-close>
-                    <svg class="modal-window-contacts-franchise__icon-btn">
+                <button type="button" class="btn-close-modal" data-modal-franchise-close>
+                    <svg class="btn-close-modal__icon">
                         <use href="./images/sprite-icons.svg#icon-close-modal"></use>
                     </svg>
                 </button>
                 
-                <p class="modal-window-contacts-franchise__text">Due to the overwhelming volume of franchise 
+                <p class="modal-window__franchise-text">Due to the overwhelming volume of franchise 
                     requests we are not accepting new franchisee applications at this time. 
                     Once the application process resumes, we will contact you for further information. 
                     Please fill out the contact information below and we will reach out for additional information. 
                     We appreciate your patience.</p>
 
-                <form class="form-modal-contacts-franchise">
+                <form class="form-modal-franchise">
                     <input 
                         type="text" 
                         name="date-name" 
-                        class="form-modal-contacts-franchise__input" 
+                        class="form-modal-franchise__input" 
                         title="Please enter valid name"
                         placeholder="Name"
                         pattern="[a-z]{1,15}">
@@ -536,7 +538,7 @@
                     <input 
                         type="tel" 
                         name="date-phone" 
-                        class="form-modal-contacts-franchise__input" 
+                        class="form-modal-franchise__input" 
                         title="Please enter valid phone number"
                         placeholder="Phone"
                         pattern="[0-9]{10}">
@@ -544,17 +546,17 @@
                     <input 
                         type="email" 
                         name="date-email" 
-                        class="form-modal-contacts-franchise__input" 
+                        class="form-modal-franchise__input" 
                         title="Please enter valid email"
                         placeholder="Email"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 
                     <textarea 
                         name="date-comment" 
-                        class="form-modal-contacts-franchise__comment"
+                        class="form-modal-franchise__comment"
                         placeholder="Comment"></textarea>
 
-                    <button type="button" class="btn form-modal-contacts-franchise__btn" data-modal-contacts-franchise-close>Submit</button>
+                    <button type="button" class="btn form-modal-franchise__btn" data-modal-contacts-franchise-close>Submit</button>
                 </form>
             </div>
         </div>

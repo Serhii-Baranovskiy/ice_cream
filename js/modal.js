@@ -17,15 +17,15 @@
       modalAbout: document.querySelector("[data-modal-about]"),
       openAbout: document.querySelector("[open-modal-about]"),
 
-      openModalLocationBtn: document.querySelector("[data-modal-contacts-location-open]"),
-      closeModalLocationBtn: document.querySelector("[data-modal-contacts-location-close]"),
-      modalLocation: document.querySelector("[data-modal-contacts-location]"),
-      openLocation: document.querySelector("[open-modal-contacts-location]"),
+      openModalLocationBtn: document.querySelector("[data-modal-location-open]"),
+      closeModalLocationBtn: document.querySelector("[data-modal-location-close]"),
+      modalLocation: document.querySelector("[data-modal-location]"),
+      openLocation: document.querySelector("[open-modal-location]"),
 
-      openModalFranchiseBtn: document.querySelector("[data-modal-contacts-franchise-open]"),
-      closeModalFranchiseBtn: document.querySelector("[data-modal-contacts-franchise-close]"),
-      modalFranchise: document.querySelector("[data-modal-contacts-franchise]"),
-      openFranchise: document.querySelector("[open-modal-contacts-franchise]"),
+      openModalFranchiseBtn: document.querySelector("[data-modal-franchise-open]"),
+      closeModalFranchiseBtn: document.querySelector("[data-modal-franchise-close]"),
+      modalFranchise: document.querySelector("[data-modal-franchise]"),
+      openFranchise: document.querySelector("[open-modal-franchise]"),
     };
   
     refs.openModalHeaderBtn.addEventListener("click", toggleModalHeader);
@@ -61,12 +61,12 @@
     }
 
     function toggleModalLocation() {
-      refs.modalLocation.classList.toggle("is-hidden-modal-contacts-location");
-      refs.openLocation.classList.toggle("is-open-modal-contacts-location");
+      refs.modalLocation.classList.toggle("is-hidden-modal-location");
+      refs.openLocation.classList.toggle("is-open-modal-location");
     }
 
     function toggleModalFranchise() {
-      refs.modalFranchise.classList.toggle("is-hidden-modal-contacts-franchise");
-      refs.openFranchise.classList.toggle("is-open-modal-contacts-franchise");
+      refs.modalFranchise.classList.toggle("is-hidden-modal-franchise");
+      refs.openFranchise.classList.toggle("is-open-modal-franchise");
     }
   })();
