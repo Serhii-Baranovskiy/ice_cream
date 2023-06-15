@@ -2,6 +2,14 @@
     background-color: getColor('accent-color-main');
 }
 
+.container-footer{
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .section-footer__title{
     width: 232px;
     margin-top: 0;
@@ -12,6 +20,13 @@
     line-height: 1.22;
     text-transform: uppercase;
     color: getColor('secondary-color-text');
+
+    @media screen and (min-width: 768px) {
+        width: 352px;
+        
+        font-size: 26px;
+        line-height: 1.23;
+    }
 }
 
 .section-footer__title-big-words{
@@ -24,6 +39,24 @@
     line-height: 1.2;
     text-transform: uppercase;
     color: getColor('secondary-color-text');
+
+    @media screen and (min-width: 768px) {
+        width: 352px;
+        margin-bottom: 32px;
+
+        font-size: 48px;
+        line-height: 1.23;
+    }
+}
+
+.section-footer__block-contact{
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-content: end;
+    }
 }
 
 .section-footer__block-social{
@@ -33,14 +66,24 @@
 
 .section-footer__social-link:not(:first-child){
     margin-left: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 30px;
+    }
 }
 
 .section-footer__social-svg{
     width: 34px;
     height: 34px;
     border-radius: 50%;
-
+    fill: #84A178;
     background-color: getColor('accent-color-secondary');
+
+    &:hover,
+    &:focus{
+        fill: #FCFCFC;
+        background-color: getColor('accent-color-secondary');
+    }
 }
 
 .section-footer__contact-mobile{
@@ -55,6 +98,11 @@
 
     &--color-number{
         color: getColor('secondary-color-text');
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 34px;
+        margin-bottom: 60px;
     }
 }
 
@@ -71,11 +119,19 @@
     color: #7A7A7A;
     text-align: center;
 
+    @media screen and (min-width: 768px) {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
     & p{
-        width: 280px;
         margin-top: 0;
         margin-bottom: 0;
         margin-left: auto;
         margin-right: auto;
+
+        @media screen and (max-width: 480px) {
+            width: 280px;
+        }
     }
 }

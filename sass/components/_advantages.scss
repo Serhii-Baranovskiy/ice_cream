@@ -10,6 +10,13 @@
     }
 }
 
+.section-advantages__container{
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
 .section-advantages__item{
     width: 230px;
     margin-left: auto;

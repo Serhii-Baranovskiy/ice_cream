@@ -93,6 +93,11 @@ body.is-open-modal-franchise{
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 
 .list {

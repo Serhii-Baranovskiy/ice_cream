@@ -86,10 +86,11 @@
     font-size: 12px;
     line-height: 1.25;
 
-    &:hover,
-    &:focus{
+    &:hover{
         cursor: pointer;
-        color: getColor('secondary-color-text');
+        outline: 2px solid #0A8817;
+        color: getColor('main-color-text');
+        text-decoration: none;
     }
 }
 
@@ -99,10 +100,13 @@
     color: getColor('accent-color-secondary');
     text-decoration: underline;
 
-    &:hover,
-    &:focus{
+    &:hover{
         cursor: pointer;
-        color: getColor('secondary-color-text');
+        color: #0A8817;
+    }
+
+    &:focus{
+        color: #FCFCFC;
     }
 }
 

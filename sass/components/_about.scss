@@ -24,6 +24,11 @@
     font-size: 30px;
     line-height: 1.27;
     text-transform: uppercase;
+    color: #FCFCFC;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+    }
 }
 
 .section-about__text-description{
@@ -52,6 +57,21 @@
         background: url('../../images/about.png') 0 22px, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
 
         background-repeat: no-repeat;
+
+        @media screen and (min-width: 768px) {
+            width: 330px;
+            height: 330px;
+            left: -116%;
+            top: 0;
+            transform: translate(0, 0);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 336px;
+        margin-right: 0;
+        margin-top: 80px;
+        text-align: left;
     }
 }
 
@@ -70,4 +90,22 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 12px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #0A8817;
+    }
+
+    &:focus{
+        background-color: #0A8817;
+        color: #FCFCFC;
+    }
+
+    &:focus .mobile-menu-btn__svg{
+        fill: #FCFCFC;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 0;
+    }
 }

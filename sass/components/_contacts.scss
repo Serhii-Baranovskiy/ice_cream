@@ -1,12 +1,20 @@
 .section-contacts{
     background-color: getColor('accent-color-main');
     padding-bottom: 60px;
+
+    @media screen and (min-width: 768px){
+        padding-bottom: 40px;
+    }
 }
 
 .section-contacts__block-item{
     position: relative;
     top: -360px;
     margin-bottom: -336px;
+
+    @media screen and (min-width: 768px){
+        display: flex;
+    }
 }
 
 .section-contacts__item{
@@ -27,6 +35,11 @@
 
     &:not(:last-child){
         margin-bottom: 16px;
+
+        @media screen and (min-width: 768px){
+            margin-bottom: 0;
+            margin-right: 16px;
+        }
     }
 
     & p{
@@ -97,17 +110,69 @@
     padding-bottom: 6px;
 }
 
-.contacts-btn{
+.section-contacts__block-btn{
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.contacts-btn-location{
     margin-left: auto;
     margin-right: auto;
     width: 196px;
 
-    &--bg-transparent{
-        background-color: transparent;
-        border: 2px solid getColor('accent-color-secondary');;
-    }
-
     &:not(:last-child){
         margin-bottom: 16px;
+
+        @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        }
+    }
+
+    &:hover{
+        cursor: pointer;
+        background-color: #0A8817;
+    }
+
+    &:focus{
+        background-color: #0A8817;
+        color: #FCFCFC;
+    }
+
+    &:focus .mobile-menu-btn__svg{
+        fill: #FCFCFC;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        margin-right: 8px;
+    }
+}
+
+.contacts-btn-franchise{
+    margin-left: auto;
+    margin-right: auto;
+    width: 196px;
+    background-color: transparent;
+    border: 2px solid getColor('accent-color-secondary');
+
+    &:hover{
+        cursor: pointer;
+        border: 2px solid #0A8817;
+    }
+
+    &:focus{
+        border: 2px solid #0A8817;
+        color: #FCFCFC;
+    }
+
+    &:focus .mobile-menu-btn__svg{
+        fill: #FCFCFC;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 8px;
+        margin-right: auto;
     }
 }

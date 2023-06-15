@@ -325,7 +325,7 @@
     <div class="section-advantages container">
         <h2 hidden>Advantages</h2>
 
-        <ul class="list">
+        <ul class="list section-advantages__container">
             <li class="section-advantages__item section-advantages__item--first-item">
                 <p class="section-advantages__value">721</p>
                 <p class="section-advantages__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
@@ -342,11 +342,12 @@
     </div>
 
     <div class="section-galery container">
-        <div class="section-galery__slider" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 6000; ratio: 440:204">
+        <div class="section-galery__slider" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 6000; ratio: 1013:422">
             <ul class="list uk-slideshow-items">
                 <li class="section-galery__block-img">
                     <picture>
-                        <source srcset="./images/gallery/gallery-mobile-1.jpg 1x, ./images/gallery/gallery-mobile-1@2x.jpg 2x">
+                        <source srcset="./images/gallery/gallery-mobile-1.jpg 1x, ./images/gallery/gallery-mobile-1@2x.jpg 2x" media="(max-width:480px)">
+                        <source srcset="./images/gallery/gallery-tablet-1.jpg 1x, ./images/gallery/gallery-tablet-1@2x.jpg 2x">
                         <img 
                             class="section-galery__img-item"
                             src="./images/gallery/gallery-mobile-1.jpg" 
@@ -355,7 +356,8 @@
                 </li>
                 <li class="section-galery__block-img">
                     <picture>
-                        <source srcset="./images/gallery/gallery-mobile-2.jpg 1x, ./images/gallery/gallery-mobile-2@2x.jpg 2x">
+                        <source srcset="./images/gallery/gallery-mobile-2.jpg 1x, ./images/gallery/gallery-mobile-2@2x.jpg 2x" media="(max-width:480px)">
+                        <source srcset="./images/gallery/gallery-tablet-2.jpg 1x, ./images/gallery/gallery-tablet-2@2x.jpg 2x">
                         <img 
                             class="section-galery__img-item"
                             src="./images/gallery/gallery-mobile-2.jpg" 
@@ -364,7 +366,8 @@
                 </li>
                 <li class="section-galery__block-img">
                     <picture>
-                        <source srcset="./images/gallery/gallery-mobile-3.jpg 1x, ./images/gallery/gallery-mobile-3@2x.jpg 2x">
+                        <source srcset="./images/gallery/gallery-mobile-3.jpg 1x, ./images/gallery/gallery-mobile-3@2x.jpg 2x" media="(max-width:480px)">
+                        <source srcset="./images/gallery/gallery-tablet-2.jpg 1x, ./images/gallery/gallery-tablet-2@2x.jpg 2x">
                         <img 
                             class="section-galery__img-item"
                             src="./images/gallery/gallery-mobile-3.jpg" 
@@ -467,17 +470,19 @@
             </li>
         </ul>
 
-        <button class="btn contacts-btn" data-modal-location-open>Our locations
-            <svg class="mobile-menu-btn__svg">
-                <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
-            </svg>
-        </button>
+        <div class="section-contacts__block-btn">
+            <button class="btn contacts-btn-location" data-modal-location-open>Our locations
+                <svg class="mobile-menu-btn__svg">
+                    <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
+                </svg>
+            </button>
 
-        <button class="btn contacts-btn contacts-btn--bg-transparent" data-modal-franchise-open>Franchise
-            <svg class="mobile-menu-btn__svg">
-                <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
-            </svg>
-        </button>
+            <button class="btn contacts-btn-franchise" data-modal-franchise-open>Franchise
+                <svg class="mobile-menu-btn__svg">
+                    <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
+                </svg>
+            </button>
+        </div>
 
         <div class="backdrop-mobile is-hidden-modal-location" data-modal-location>
             <div class="modal-window modal-window--location">
@@ -564,30 +569,34 @@
 
     <footer>
         <div class="section-footer">
-            <div class="container">
+            <div class="container container-footer">
                 <h2 hidden>Homemade ice cream made with passion</h2>
-                <p class="section-footer__title">Homemade ice cream made</p>
-                <p class="section-footer__title-big-words">with passion</p>
-                <ul class="list section-footer__block-social">
-                    <li class="section-footer__social-link"><a href="https://github.com/" target="_blank">
-                        <svg class="section-footer__social-svg">
-                            <use class="section-footer__social-icon" href="./images/sprite-icons.svg#icon-footer-github"></use>
-                        </svg>
-                    </a></li>
-                    <li class="section-footer__social-link"><a href="https://web.telegram.org/" target="_blank">
-                        <svg class="section-footer__social-svg">
-                            <use class="section-footer__social-icon" href="./images/sprite-icons.svg#icon-footer-telegram"></use>
-                        </svg>
-                    </a></li>
-                    <li class="section-footer__social-link"><a href="https://www.facebook.com/" target="_blank">
-                        <svg class="section-footer__social-svg">
-                            <use class="section-footer__social-icon" href="./images/sprite-icons.svg#icon-footer-facebook"></use>
-                        </svg>
-                    </a></li>
-                </ul>
-                <p class="section-footer__contact-mobile">Feel free to contact 
-                    <a class="link section-footer__contact-mobile--color-number" href="tel:+61 (0) 383 766 284">+61 (0) 383 766 284</a>
-                </p>
+                <div class="section-footer__block-title">
+                    <p class="section-footer__title">Homemade ice cream made</p>
+                    <p class="section-footer__title-big-words">with passion</p>
+                </div>
+                <div class="section-footer__block-contact">
+                    <ul class="list section-footer__block-social">
+                        <li class="section-footer__social-link"><a href="https://github.com/" target="_blank">
+                            <svg class="section-footer__social-svg">
+                                <use class="section-footer__social-icon" href="./images/sprite-icons.svg#icon-footer-github"></use>
+                            </svg>
+                        </a></li>
+                        <li class="section-footer__social-link"><a href="https://web.telegram.org/" target="_blank">
+                            <svg class="section-footer__social-svg">
+                                <use class="section-footer__social-icon" href="./images/sprite-icons.svg#icon-footer-telegram"></use>
+                            </svg>
+                        </a></li>
+                        <li class="section-footer__social-link"><a href="https://www.facebook.com/" target="_blank">
+                            <svg class="section-footer__social-svg">
+                                <use class="section-footer__social-icon" href="./images/sprite-icons.svg#icon-footer-facebook"></use>
+                            </svg>
+                        </a></li>
+                    </ul>
+                    <p class="section-footer__contact-mobile">Feel free to contact 
+                        <a class="link section-footer__contact-mobile--color-number" href="tel:+61 (0) 383 766 284">+61 (0) 383 766 284</a>
+                    </p>
+                </div>
             </div>
             <div class="section-footer__license">
                 <p>© 2022 - IceCream. All Rights Reserved.</p>
