@@ -1,6 +1,10 @@
 .section-galery__slider{
     margin-top: -11%;
     width: 100%;
+
+    @media screen and (min-width: 768px) {
+        margin-top: -20%;
+    }
 }
 
 .section-galery__block-img{

@@ -1,12 +1,13 @@
 .section-advantages{
-    padding-bottom: 51px;
+    padding-bottom: 38px;
     padding-top: 60px;
     text-align: center;
 
     background-color: getColor('accent-color-main');
 
-    @media screen and (max-width: 425px) {
-        padding-bottom: 38px;
+    @media screen and (min-width: 768px) {
+        padding-top: 80px;
+        padding-bottom: 204px;
     }
 }
 
@@ -24,6 +25,10 @@
 
     &:not(:last-child){
         margin-bottom: 32px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
     }
 
     &::before{
@@ -51,6 +56,10 @@
 
     &--last-item{
         margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -62,6 +71,11 @@
     font-size: 36px;
     line-height: 1.22;
     color: getColor('secondary-color-text');
+
+    @media screen and (min-width: 768px) {
+        margin-top: 32px;
+        margin-bottom: 12px;
+    }
 }
 
 .section-advantages__description{

@@ -111,9 +111,10 @@
 }
 
 .number-point{
+    display: none;
 
-    @media screen and (max-width: 480px) {
-        display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
     }
 }
 
@@ -135,10 +136,21 @@
 }
 
 .pictures-hero__many-ice-cream{
+    display: none;
 
-    @media screen and (max-width: 480px) {
-        display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
     }
+}
+
+.pictures-hero__description{
+    width: 165px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 12px;
+    line-height: 1.4;
+    color: #FFFFFF;
 }
 
 .picture-hero__img-cone-ice-cream{

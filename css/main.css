@@ -168,24 +168,16 @@ img {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .block-nav {
     display: none;
   }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 1001px) {
   .block-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-@media screen and (min-width: 601px) {
-  .block-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
   }
 }
 
@@ -288,7 +280,7 @@ img {
   border: none;
   background-color: transparent;
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 1001px) {
   .btn-menu {
     display: none;
   }
@@ -631,9 +623,12 @@ input:invalid {
   color: #FCFCFC;
 }
 
-@media screen and (max-width: 480px) {
+.number-point {
+  display: none;
+}
+@media screen and (min-width: 768px) {
   .number-point {
-    display: none;
+    display: block;
   }
 }
 
@@ -659,10 +654,22 @@ input:invalid {
   }
 }
 
-@media screen and (max-width: 480px) {
+.pictures-hero__many-ice-cream {
+  display: none;
+}
+@media screen and (min-width: 768px) {
   .pictures-hero__many-ice-cream {
-    display: none;
+    display: block;
   }
+}
+
+.pictures-hero__description {
+  width: 165px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #FFFFFF;
 }
 
 .picture-hero__img-cone-ice-cream {
@@ -1068,18 +1075,22 @@ input:invalid {
           transform: translate(-50%, -50%);
   -webkit-box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
           box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-  background: url("../../images/about.png") 0 22px, -webkit-gradient(linear, left bottom, left top, from(rgba(248, 210, 78, 0.7)), to(rgba(248, 210, 78, 0.7))), #D9D9D9;
-  background: url("../../images/about.png") 0 22px, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+  background: url("../../images/about-mobile.png") 0 22px, -webkit-gradient(linear, left bottom, left top, from(rgba(248, 210, 78, 0.7)), to(rgba(248, 210, 78, 0.7))), #D9D9D9;
+  background: url("../../images/about-mobile.png") 0 22px, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
   .section-about__text-description::before {
     width: 330px;
-    height: 330px;
-    left: -116%;
+    height: 356px;
+    left: -110%;
     top: 0;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+    background: url("../../images/about-tablet.png") 0 26px, -webkit-gradient(linear, left bottom, left top, from(rgba(248, 210, 78, 0.7)), to(rgba(248, 210, 78, 0.7))), #D9D9D9;
+    background: url("../../images/about-tablet.png") 0 26px, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1093,8 +1104,14 @@ input:invalid {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-about__text-description::before {
-    background: url("../../images/about@2x.png") 0 22px, -webkit-gradient(linear, left bottom, left top, from(rgba(248, 210, 78, 0.7)), to(rgba(248, 210, 78, 0.7))), #D9D9D9;
-    background: url("../../images/about@2x.png") 0 22px, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    background: url("../../images/about-mobile@2x.png") 0 22px, -webkit-gradient(linear, left bottom, left top, from(rgba(248, 210, 78, 0.7)), to(rgba(248, 210, 78, 0.7))), #D9D9D9;
+    background: url("../../images/about-mobile@2x.png") 0 22px, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .section-about__text-description::before {
+    background: url("../../images/about-tablet@2x.png") 0 22px, -webkit-gradient(linear, left bottom, left top, from(rgba(248, 210, 78, 0.7)), to(rgba(248, 210, 78, 0.7))), #D9D9D9;
+    background: url("../../images/about-tablet@2x.png") 0 22px, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -1150,14 +1167,15 @@ input:invalid {
 }
 
 .section-advantages {
-  padding-bottom: 51px;
+  padding-bottom: 38px;
   padding-top: 60px;
   text-align: center;
   background-color: #84A178;
 }
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 768px) {
   .section-advantages {
-    padding-bottom: 38px;
+    padding-top: 80px;
+    padding-bottom: 204px;
   }
 }
 
@@ -1176,6 +1194,11 @@ input:invalid {
 }
 .section-advantages__item:not(:last-child) {
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .section-advantages__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 .section-advantages__item::before {
   content: "";
@@ -1199,6 +1222,11 @@ input:invalid {
 .section-advantages__item--last-item {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .section-advantages__item--last-item {
+    margin-bottom: 0;
+  }
+}
 
 .section-advantages__value {
   margin-top: 16px;
@@ -1207,6 +1235,12 @@ input:invalid {
   font-size: 36px;
   line-height: 1.22;
   color: #FCFCFC;
+}
+@media screen and (min-width: 768px) {
+  .section-advantages__value {
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
 }
 
 .section-advantages__description {
@@ -1221,6 +1255,11 @@ input:invalid {
   margin-top: -11%;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .section-galery__slider {
+    margin-top: -20%;
+  }
+}
 
 .section-galery__block-img {
   border-radius: 8px;
@@ -1228,6 +1267,11 @@ input:invalid {
 
 .section-customer-reviews {
   padding-bottom: 420px;
+}
+@media screen and (min-width: 768px) {
+  .section-customer-reviews {
+    padding-bottom: 360px;
+  }
 }
 
 .section-customer-reviews__slider {
@@ -1241,6 +1285,8 @@ input:invalid {
 @media screen and (min-width: 768px) {
   .section-customer-reviews__slider {
     width: 705px;
+    height: auto;
+    margin-top: 100px;
   }
 }
 
@@ -1287,6 +1333,7 @@ input:invalid {
 @media screen and (min-width: 768px) {
   .customer-review__block-review {
     min-height: 138px;
+    border-radius: 24px;
   }
 }
 
@@ -1329,6 +1376,11 @@ input:invalid {
 * + .uk-margin {
   margin-top: 12px !important;
 }
+@media screen and (min-width: 768px) {
+  * + .uk-margin {
+    margin-top: 32px !important;
+  }
+}
 
 .uk-margin {
   margin-bottom: 0;
@@ -1358,6 +1410,8 @@ input:invalid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    top: -280px;
+    margin-bottom: -240px;
   }
 }
 
@@ -1389,6 +1443,11 @@ input:invalid {
   margin-top: 0;
   margin-bottom: 0;
 }
+@media screen and (min-width: 768px) {
+  .section-contacts__item {
+    padding-bottom: 40px;
+  }
+}
 
 .section-contacts__category {
   display: inline-block;
@@ -1399,16 +1458,32 @@ input:invalid {
   text-transform: uppercase;
   background-color: #F8D24E;
 }
+@media screen and (min-width: 768px) {
+  .section-contacts__category {
+    margin-bottom: 32px;
+  }
+}
 
 .section-contacts__city {
   margin-bottom: 8px;
   font-weight: 500;
   line-height: 1.86;
 }
+@media screen and (min-width: 768px) {
+  .section-contacts__city {
+    margin-bottom: 12px;
+  }
+}
 
 .section-contacts__address {
   padding-bottom: 24px;
   border-bottom: 1px solid #E1E1E1;
+}
+@media screen and (min-width: 768px) {
+  .section-contacts__address {
+    width: 155px;
+    padding-bottom: 32px;
+  }
 }
 
 .section-contacts__link-address {
@@ -1419,6 +1494,12 @@ input:invalid {
 .section-contacts__work-time {
   margin-top: 24px;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .section-contacts__work-time {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 .section-contacts__day {
@@ -1436,6 +1517,11 @@ input:invalid {
 .section-contacts__phone {
   border-top: 1px solid #E1E1E1;
   padding-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .section-contacts__phone {
+    padding-top: 32px;
+  }
 }
 
 .section-contacts__link-mail,

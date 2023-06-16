@@ -14,17 +14,12 @@
 
 .block-nav {
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1000px) {
         display: none;
     }
 
-    @media screen and (min-width: 601px) {
+    @media screen and (min-width: 1001px) {
         display: flex;
-    }
-
-    @media screen and (min-width: 601px) {
-        display: flex;
-        width: 100%;
     }
 
 }
