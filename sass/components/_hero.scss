@@ -1,6 +1,6 @@
 @keyframes anim-img-cone-ice-cream-hero480{
     from{
-        transform: scale(1) translateX(-450px) translateY(0);
+        transform: scale(1) translateX(-660px) translateY(0);
     }
     50%{
         transform: scale(1.5) translateY(-17%);
@@ -34,6 +34,15 @@
 
 }
 
+@keyframes anim-img-cone-ice-cream-hero-opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 @keyframes anim-img-points-hero{
     from{
         opacity: 0;
@@ -43,17 +52,50 @@
     }
 }
 
-.section-header-hero{
-    position: relative;
-
-    @media screen and (max-width: 450px) {
-        min-height: 502px;
+@keyframes picture-hero-description{
+    from{
+        transform: translateX(-185%);
+    }
+    70%{
+        transform: translateX(20%);
+    }
+    80%{
+        transform: translateX(-10%);
     }
 
-    @media screen and (min-width: 451px) and (max-width: 480px) {
-        min-height: 415px;
+    90%{
+        transform: translateX(4%);
     }
-    
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes many-ice-cream{
+    from{
+        transform: translateX(-120%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes many-ice-cream-rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.hero__upper-container{
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 14px;
+    }
 }
 
 .hero__title{
@@ -92,6 +134,10 @@
         color: getColor('main-color-text');
         text-decoration: none;
     }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 24px;
+    }
 }
 
 .hero__btn-link{
@@ -115,23 +161,80 @@
 
     @media screen and (min-width: 768px) {
         display: block;
+        margin-top: 14px;
     }
 }
 
-.picture-hero__img-point{
+.number-point__trucks{
+    margin-top: 20px;
+}
+
+.number-points__number{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    text-align: right;
+    color: #131313;
+}
+
+.number-points__text{
+    margin-top: 4px;
+    margin-bottom: 0;
+
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    color: #FCFCFC;
+}
+
+.picture-hero__img-point-mobile{
+    display: block;
     position: absolute;
     bottom: 0;
     opacity: 0;
 
     @media screen and (max-width: 450px) {
         right: 50%;
+
         transform: translateX(50%);
         animation: anim-img-points-hero 1s ease-in 2.5s both;
     }
 
     @media screen and (min-width: 451px) and (max-width: 480px) {
         right: 0;
+
         animation: anim-img-points-hero 1s ease-in 2.5s both;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.picture-hero__img-point-tablet{
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+
+        animation: anim-img-points-hero 1s ease-in 5.5s both;
+    }
+
+    &--right{
+        right: 0;
+    }
+
+    &--left{
+        left: 0;
     }
 }
 
@@ -139,32 +242,64 @@
     display: none;
 
     @media screen and (min-width: 768px) {
-        display: block;
+        display: flex;
+        margin-top: 12px;
+        padding-bottom: 12px;
     }
 }
 
+.pictures-hero__many-ice-cream-animation{
+    position: relative;
+    z-index: 2;
+
+    transform: translateX(-120%);
+    animation: many-ice-cream 2.5s linear 1.5s both;
+}
+
+.picture-hero__img-many-ice-cream{
+    display: block;
+    width: 152px;
+    height: 152px;
+    position: relative;
+    z-index: 2;
+
+    animation: many-ice-cream-rotate 5s linear infinite;
+}
+
 .pictures-hero__description{
-    width: 165px;
+    width: 222px;
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 22px;
+    padding-left: 32px;
 
     font-size: 12px;
     line-height: 1.4;
     color: #FFFFFF;
+
+    animation: picture-hero-description 1.5s ease-out;
 }
 
 .picture-hero__img-cone-ice-cream{
     position: absolute;
     bottom: 0;
+    z-index: 2;
 
     @media screen and (max-width: 451px){
+        transform: translateX(-90%);
         right: 48%;
-        transform: translateX(50%);
         animation: anim-img-cone-ice-cream-hero320 2.5s linear;
     }
 
     @media screen and (min-width: 451px) and (max-width: 480px){
         right: 5%;
         animation: anim-img-cone-ice-cream-hero480 2.5s linear;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px){
+        opacity: 0;
+        width: 268px;
+        right: 12%;
+        animation: anim-img-cone-ice-cream-hero-opacity 1.5s linear 4s both;
     }
 }

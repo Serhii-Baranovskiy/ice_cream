@@ -148,24 +148,3 @@
 
     line-height: 1.76;
 }
-
-.card-products__btn{
-    position: absolute;
-    bottom: 0;
-    width: 56px;
-    height: 22px;
-    border: none;
-    margin-bottom: 16px;
-
-    background-color: transparent;
-
-    &:hover,
-    &:focus{
-        cursor: pointer;
-    }
-}
-
-.card-products__svg-btn{
-    width: 40px;
-    height: 16px;
-}

@@ -116,39 +116,69 @@
             </div>
 
             <div class="hero">
-                <h1 class="hero__title">Ice cream made with <span class="hero__title--last-word">passion</span></h1>
-                <a href="#products-title" class="link hero__btn">Products</a>
-                <a href="#about-title" class="link hero__btn-link">How it's made</a>
-                
-
-                <div class="number-point">
-                    <div class="number-point__cafe">
-                        <p>16</p>
-                        <p>cafes</p>
+                <div class="hero__upper-container">
+                    <div class="hero__block-title">
+                        <h1 class="hero__title">Ice cream made with <span class="hero__title--last-word">passion</span></h1>
+                        <a href="#products-title" class="link hero__btn">Products</a>
+                        <a href="#about-title" class="link hero__btn-link">How it's made</a>
                     </div>
-                    <div class="number-point__trucks">
-                        <p>23</p>
-                        <p>food trucks</p>
+                    
+    
+                    <div class="number-point">
+                        <div class="number-point__cafe">
+                            <p class="number-points__number">16</p>
+                            <p class="number-points__text">cafes</p>
+                        </div>
+                        <div class="number-point__trucks">
+                            <p class="number-points__number">23</p>
+                            <p class="number-points__text">food trucks</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="pictures-hero">
                     <div class="pictures-hero__points">
                         <img 
-                            class="picture-hero__img-point"
+                            class="picture-hero__img-point-mobile"
                             srcset="./images/point-mobile.png 1x, ./images/point-mobile@2x.png 2x"
                             src="./images/point-mobile.png" 
                             alt="points">
+
+                        <img 
+                            class="picture-hero__img-point-tablet picture-hero__img-point-tablet--right"
+                            srcset="./images/point-tablet-right.png 1x, ./images/point-tablet-right@2x.png 2x"
+                            src="./images/point-tablet-right.png" 
+                            alt="points">
+
+                        <img 
+                            class="picture-hero__img-point-tablet picture-hero__img-point-tablet--left"
+                            srcset="./images/point-tablet-left.png 1x, ./images/point-tablet-left@2x.png 2x"
+                            src="./images/point-tablet-left.png" 
+                            alt="points">
                     </div>
                     <div class="pictures-hero__many-ice-cream">
+                        <div class="pictures-hero__many-ice-cream-animation">
+                            <picture>
+                                <source srcset="./images/many-ice-cream-tablet.png 1x, ./many-ice-cream-tablet@2x.png 2x" media="(max-width: 768px)">
+                                <img 
+                                    class="picture-hero__img-many-ice-cream picture-hero__img-many-ice-cream--animation"
+                                    src="./many-ice-cream-tablet0.png" 
+                                    alt="cone-ice-cream">
+                            </picture>
+                        </div>
                         <p class="pictures-hero__description">Indulge in a scoop of ice cream made 
                             with passion and treat your taste buds to an unforgettable experience!</p>
-                        <div class="pictures-hero__arrow"></div>
+                        
+                        <button class="btn-long-arrow btn-long-arrow--margin-bottom-hero" data-modal-product-open-first>
+                            <svg class="btn-long-arrow__svg btn-long-arrow__svg--color">
+                                <use href="./images/sprite-icons.svg#icon-card-arrow"></use>
+                            </svg>
+                        </button>
                     </div>
                     <div class="pictures-hero__cone-ice-cream">
                         <picture>
                             <source srcset="./images/cone-ice-cream320.png 1x, ./images/cone-ice-cream320@2x.png 2x" media="(max-width: 450px)">
-                            <source srcset="./images/cone-ice-cream480.png 1x, ./images/cone-ice-cream480@2x.png 2x" media="(max-width: 480px)">
+                            <source srcset="./images/cone-ice-cream480.png 1x, ./images/cone-ice-cream480@2x.png 2x" media="(max-width: 768px)">
                         <img 
                             class="picture-hero__img-cone-ice-cream"
                             src="./images/cone-ice-cream320.png" 
@@ -169,27 +199,27 @@
                 <li class="card-products card-products--first-card">
                     <h3 class="card-products__title">Ice cream</h3>
                     <p class="card-products__description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
-                    <button class="card-products__btn" data-modal-product-open-first>
-                        <svg class="card-products__svg-btn">
-                            <use class="card-products__icon-btn" href="./images/sprite-icons.svg#icon-card-arrow"></use>
+                    <button class="btn-long-arrow btn-long-arrow--margin-bottom-product" data-modal-product-open-first>
+                        <svg class="btn-long-arrow__svg">
+                            <use href="./images/sprite-icons.svg#icon-card-arrow"></use>
                         </svg>
                     </button>
                 </li>
                 <li class="card-products">
                     <h3 class="card-products__title">Ice coffe</h3>
                     <p class="card-products__description">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
-                    <button class="card-products__btn" data-modal-product-open-second>
-                        <svg class="card-products__svg-btn">
-                            <use class="card-products__icon-btn" href="./images/sprite-icons.svg#icon-card-arrow"></use>
+                    <button class="btn-long-arrow btn-long-arrow--margin-bottom-product" data-modal-product-open-second>
+                        <svg class="btn-long-arrow__svg">
+                            <use href="./images/sprite-icons.svg#icon-card-arrow"></use>
                         </svg>
                     </button>
                 </li>
                 <li class="card-products card-products--last-card">
                     <h3 class="card-products__title">Milkshakes</h3>
                     <p class="card-products__description">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</p>
-                    <button class="card-products__btn" data-modal-product-open-third>
-                        <svg class="card-products__svg-btn">
-                            <use class="card-products__icon-btn" href="./images/sprite-icons.svg#icon-card-arrow"></use>
+                    <button class="btn-long-arrow btn-long-arrow--margin-bottom-product" data-modal-product-open-third>
+                        <svg class="btn-long-arrow__svg">
+                            <use href="./images/sprite-icons.svg#icon-card-arrow"></use>
                         </svg>
                     </button>
                 </li>
