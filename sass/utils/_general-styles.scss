@@ -56,7 +56,7 @@ body {
     top: 0;
     left: 0;
     z-index: 15;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
     opacity: 1;
@@ -73,8 +73,16 @@ body {
     padding-top: 28px;
     padding-bottom: 28px;
     overflow-y: scroll;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
 
     background-color: #FFFFFF;
+
+    @media screen and (min-width: 768px) {
+        width: 568px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 body.is-open-modal-header,

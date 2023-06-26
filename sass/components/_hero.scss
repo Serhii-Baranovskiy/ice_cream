@@ -13,7 +13,7 @@
 
 @keyframes anim-img-cone-ice-cream-hero320 {
     from {
-        transform: translateX(-90%);
+        transform: translateX(-120%);
     }
 
     30% {
@@ -280,6 +280,10 @@
     animation: picture-hero-description 1.5s ease-out;
 }
 
+.btn-long-arrow--margin-bottom-hero{
+    animation: anim-img-points-hero 1s ease-in 1.5s both;
+}
+
 .picture-hero__img-cone-ice-cream{
     position: absolute;
     bottom: 0;
@@ -288,7 +292,7 @@
     @media screen and (max-width: 451px){
         transform: translateX(-90%);
         right: 48%;
-        animation: anim-img-cone-ice-cream-hero320 2.5s linear;
+        animation: anim-img-cone-ice-cream-hero320 2.5s linear both;
     }
 
     @media screen and (min-width: 451px) and (max-width: 480px){

@@ -1,7 +1,6 @@
 .modal-window--about{
     top: 50%;
     transform: translateY(-50%);
-    border-radius: 10px;
 }
 
 .modal-window__about-title{
@@ -13,6 +12,20 @@
     font-family: $dicoration-font-family;
     font-size: 16px;
     line-height: 1.5;
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+
+        margin-bottom: 32px;
+    }
+}
+
+.modal-window__video{
+
+    @media screen and (min-width: 768px) {
+        width: 448px;
+        border-radius: 10px;
+    }
 }
 
 .modal-window__about-text{
@@ -25,4 +38,10 @@
     text-align: left;
     font-size: 14px;
     line-height: 1.4;
+
+    @media screen and (min-width: 768px) {
+        width: 448px;
+        margin-top: 32px;
+        margin-bottom: 0;
+    }
 }
