@@ -5,6 +5,10 @@
     @media screen and (min-width: 768px){
         padding-bottom: 40px;
     }
+
+    @media screen and (min-width: 1200px){
+        padding-bottom: 120px;
+    }
 }
 
 .section-contacts__block-item{
@@ -16,6 +20,11 @@
         display: flex;
         top: -280px;
         margin-bottom: -240px;
+    }
+
+    @media screen and (min-width: 1200px){
+        top: -112px;
+        margin-bottom: -52px;
     }
 }
 
@@ -38,9 +47,13 @@
     &:not(:last-child){
         margin-bottom: 16px;
 
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 768px) and (min-width: 1199px){
             margin-bottom: 0;
             margin-right: 16px;
+        }
+
+        @media screen and (min-width: 1200px){
+            margin-right: 32px;
         }
     }
 
@@ -51,6 +64,16 @@
 
     @media screen and (min-width: 768px){
         padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 368px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        font-size: 16px;
     }
 }
 
@@ -87,6 +110,10 @@
     @media screen and (min-width: 768px){
         width: 155px;
         padding-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 280px;
     }
 }
 

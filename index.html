@@ -15,47 +15,47 @@
     <header id="home">
         <div class="section-header-hero container">
 
-            <a href="" class="logo link"></a>
+            <div class="container__navigation">
+                <a href="" class="logo link"></a>
 
-            <nav class="navigation">
-                <div class="block-nav">
-                    <ul class="list">
-                        <li class="navigation__item"><a href="#home" class="link">Home</a></li>
-                        <li class="navigation__item"><a href="#about-title" class="link">How it's made?</a></li>
-                        <li class="navigation__item"><a href="#products-title" class="link">Our products</a></li>
-                        <li class="navigation__item"><a href="#contacts" class="link">Contact</a></li>
-                    </ul>
-
-                    <button class="btn">Buy now</button>
-                </div>
-
-                <div class="mobile-menu" data-menu>
-                    <nav class="mobile-nav">
-                        <ul class="list mobile-nav__list">
-                            <li class="mobile-nav__item"><a href="#home" class="link mobile-nav__navigation mobile-nav__active-page">Home</a></li>
-                            <li class="mobile-nav__item"><a href="#about-title" class="link mobile-nav__navigation">How it's made?</a></li>
-                            <li class="mobile-nav__item"><a href="#products-title" class="link mobile-nav__navigation">Our products</a></li>
-                            <li class="mobile-nav__item"><a href="#contacts" class="link mobile-nav__navigation">Contact</a></li>
+                <nav class="navigation">
+                    <div class="block-nav">
+                        <ul class="list block-nav__item">
+                            <li class="navigation__item"><a href="#home" class="link navigation__desktop-nav">Home</a></li>
+                            <li class="navigation__item"><a href="#about-title" class="link navigation__desktop-nav">How it's made?</a></li>
+                            <li class="navigation__item"><a href="#products-title" class="link navigation__desktop-nav">Our products</a></li>
+                            <li class="navigation__item"><a href="#contacts" class="link navigation__desktop-nav">Contact</a></li>
                         </ul>
-                    </nav>
-    
-                    <button class="btn mobile-menu-btn" data-modal-header-open>Buy now
-                        <svg class="mobile-menu-btn__svg">
-                            <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
+                    </div>
+
+                    <div class="mobile-menu" data-menu>
+                        <nav class="mobile-nav">
+                            <ul class="list mobile-nav__list">
+                                <li class="mobile-nav__item"><a href="#home" class="link mobile-nav__navigation mobile-nav__active-page">Home</a></li>
+                                <li class="mobile-nav__item"><a href="#about-title" class="link mobile-nav__navigation">How it's made?</a></li>
+                                <li class="mobile-nav__item"><a href="#products-title" class="link mobile-nav__navigation">Our products</a></li>
+                                <li class="mobile-nav__item"><a href="#contacts" class="link mobile-nav__navigation">Contact</a></li>
+                            </ul>
+                        </nav>
+        
+                        <button class="btn mobile-menu-btn" data-modal-header-open>Buy now
+                            <svg class="mobile-menu-btn__svg">
+                                <use class="mobile-menu-btn__icon-menu" href="./images/sprite-icons.svg#icon-btn-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <button
+                        class="btn-menu"
+                        aria-expanded="false"
+                        data-menu-button>
+                        <svg class="btn-menu__svg" aria-label="Перемикач мобільного меню">
+                            <use class="btn-menu__icon-menu" href="./images/sprite-icons.svg#icon-menu-mobile"></use>
+                            <use class="btn-menu__icon-cross" href="./images/sprite-icons.svg#icon-close-mobile"></use>
                         </svg>
                     </button>
-                </div>
-                
-                <button
-                    class="btn-menu"
-                    aria-expanded="false"
-                    data-menu-button>
-                    <svg class="btn-menu__svg" aria-label="Перемикач мобільного меню">
-                        <use class="btn-menu__icon-menu" href="./images/sprite-icons.svg#icon-menu-mobile"></use>
-                        <use class="btn-menu__icon-cross" href="./images/sprite-icons.svg#icon-close-mobile"></use>
-                    </svg>
-                </button>
-            </nav>
+                </nav>
+            </div>
 
             <div class="backdrop-mobile is-hidden-modal-header" data-modal-header>
                 <div class="modal-window modal-window--header">
@@ -159,7 +159,7 @@
                     <div class="pictures-hero__many-ice-cream">
                         <div class="pictures-hero__many-ice-cream-animation">
                             <picture>
-                                <source srcset="./images/many-ice-cream-tablet.png 1x, ./many-ice-cream-tablet@2x.png 2x" media="(max-width: 768px)">
+                                <source srcset="./images/many-ice-cream-tablet.png 1x, ./many-ice-cream-tablet@2x.png 2x" media="(max-width: 1200px)">
                                 <img 
                                     class="picture-hero__img-many-ice-cream picture-hero__img-many-ice-cream--animation"
                                     src="./many-ice-cream-tablet0.png" 
@@ -319,10 +319,10 @@
         <div class="section-about__text-description">
             <p>Ice is a place where you will become not only a little happier, but also healthier. 
                 Health is the main value for us, and we follow it when creating our handmade desserts.</p>
-            <p>We use traditional recipes and 100% natural ingredients. 
+            <p class="section-about__text-description--size">We use traditional recipes and 100% natural ingredients. 
                 Our products are so natural that they can be given to children from the age of three years. 
                 Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
-            <p>This is enough to choose ice cream and coffee for any mood!</p>
+            <p class="section-about__text-description--size">This is enough to choose ice cream and coffee for any mood!</p>
 
             <button class="btn about-btn"data-modal-about-open>Read more
                 <svg class="mobile-menu-btn__svg">
@@ -384,31 +384,34 @@
                 <li class="section-galery__block-img">
                     <picture>
                         <source srcset="./images/gallery/gallery-mobile-1.jpg 1x, ./images/gallery/gallery-mobile-1@2x.jpg 2x" media="(max-width:480px)">
-                        <source srcset="./images/gallery/gallery-tablet-1.jpg 1x, ./images/gallery/gallery-tablet-1@2x.jpg 2x">
+                        <source srcset="./images/gallery/gallery-tablet-1.jpg 1x, ./images/gallery/gallery-tablet-1@2x.jpg 2x" media="(max-width:1199px)">
+                        <source srcset="./images/gallery/gallery-desktop-1.jpg 1x, ./images/gallery/gallery-desktop-1@2x.jpg 2x" media="(min-width:1200px)">
                         <img 
                             class="section-galery__img-item"
                             src="./images/gallery/gallery-mobile-1.jpg" 
-                            alt="mani ice cream">
+                            alt="mani ice cream" uk-cover>
                     </picture>
                 </li>
                 <li class="section-galery__block-img">
                     <picture>
                         <source srcset="./images/gallery/gallery-mobile-2.jpg 1x, ./images/gallery/gallery-mobile-2@2x.jpg 2x" media="(max-width:480px)">
-                        <source srcset="./images/gallery/gallery-tablet-2.jpg 1x, ./images/gallery/gallery-tablet-2@2x.jpg 2x">
+                        <source srcset="./images/gallery/gallery-tablet-2.jpg 1x, ./images/gallery/gallery-tablet-2@2x.jpg 2x" media="(max-width:1199px)">
+                        <source srcset="./images/gallery/gallery-desktop-2.jpg 1x, ./images/gallery/gallery-desktop-2@2x.jpg 2x" media="(min-width:1200px)">
                         <img 
                             class="section-galery__img-item"
                             src="./images/gallery/gallery-mobile-2.jpg" 
-                            alt="mani ice cream">
+                            alt="mani ice cream" uk-cover>
                     </picture>
                 </li>
                 <li class="section-galery__block-img">
                     <picture>
                         <source srcset="./images/gallery/gallery-mobile-3.jpg 1x, ./images/gallery/gallery-mobile-3@2x.jpg 2x" media="(max-width:480px)">
-                        <source srcset="./images/gallery/gallery-tablet-2.jpg 1x, ./images/gallery/gallery-tablet-2@2x.jpg 2x">
+                        <source srcset="./images/gallery/gallery-tablet-2.jpg 1x, ./images/gallery/gallery-tablet-2@2x.jpg 2x" media="(max-width:1199px)">
+                        <source srcset="./images/gallery/gallery-desktop-3.jpg 1x, ./images/gallery/gallery-desktop-3@2x.jpg 2x" media="(min-width:1200px)">
                         <img 
                             class="section-galery__img-item"
                             src="./images/gallery/gallery-mobile-3.jpg" 
-                            alt="mani ice cream">
+                            alt="mani ice cream" uk-cover>
                     </picture>
                 </li>
             </ul>

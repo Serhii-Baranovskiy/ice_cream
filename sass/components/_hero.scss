@@ -96,6 +96,10 @@
         justify-content: space-between;
         margin-top: 14px;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 45px;
+    }
 }
 
 .hero__title{
@@ -107,11 +111,23 @@
     line-height: 1.27;
     text-transform: uppercase;
     color: getColor('secondary-color-text');
+
+    @media screen and (min-width: 1200px) {
+        width: 367px;
+
+        font-size: 38px;
+        letter-spacing: 1.52px;
+    }
 }
 
 .hero__title--last-word{
     font-size: 34px;
     line-height: 0.96;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+        letter-spacing: 1.52px;
+    }
 }
 
 .hero__btn{
@@ -138,6 +154,10 @@
     @media screen and (min-width: 768px) {
         margin-top: 24px;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 28px;
+    }
 }
 
 .hero__btn-link{
@@ -163,6 +183,10 @@
         display: block;
         margin-top: 14px;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 11px;
+    }
 }
 
 .number-point__trucks{
@@ -178,6 +202,10 @@
     line-height: 1.21;
     text-align: right;
     color: #131313;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 46px;
+    }
 }
 
 .number-points__text{
@@ -188,6 +216,10 @@
     line-height: 1.25;
     text-align: right;
     color: #FCFCFC;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .picture-hero__img-point-mobile{
@@ -305,5 +337,10 @@
         width: 268px;
         right: 12%;
         animation: anim-img-cone-ice-cream-hero-opacity 1.5s linear 4s both;
+    }
+
+    @media screen and (min-width: 769px){
+        right: 5%;
+        animation: anim-img-cone-ice-cream-hero480 2.5s linear;
     }
 }

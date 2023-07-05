@@ -13,6 +13,10 @@
     
 }
 
+.container__navigation{
+    display: flex;
+}
+
 .logo{
     display: inline-block;
     width: 48px;
@@ -27,6 +31,11 @@
     }
 }
 
+.navigation{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .block-nav {
 
     @media screen and (max-width: 1000px) {
@@ -34,8 +43,32 @@
     }
 
     @media screen and (min-width: 1001px) {
-        display: flex;
+        display: block;
     }
 
+}
+
+.block-nav__item{
+    display: flex;
+    margin-top: 20px;
+}
+
+.navigation__item:not(:last-child){
+    margin-right: 28px;
+}
+
+.navigation__desktop-nav{
+    display: flex;
+    align-items: center;
+    height: 44px;
+
+    color: #FCFCFC;
+    font-size: 16px;
+    font-weight: 700;
+
+    &:hover{
+        color: #F8D24E;
+        cursor: pointer;
+    }
 }
 
